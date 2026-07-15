@@ -1,49 +1,28 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img alt="GONZO // SYSTEMS — autonomous engineering, local-first infrastructure, proof-native execution" src="./assets/hero-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/hero-light.svg">
+  <img alt="GONZO // SYSTEMS — Engineering systems that prove what they actually did." src="./assets/generated/hero-dark.svg" width="100%">
 </picture>
 
-<p align="center">
-  <strong>Systems engineering · Autonomous AI · Local-first infrastructure · Real-time product architecture</strong>
-</p>
-
-<p align="center">
-  <a href="#maya-codex-nexus">MAYA</a>
-  &nbsp;·&nbsp;
-  <a href="#engineering-doctrine">Engineering doctrine</a>
-  &nbsp;·&nbsp;
-  <a href="#selected-systems">Selected systems</a>
-  &nbsp;·&nbsp;
-  <a href="#engineering-activity">Activity</a>
-</p>
-
+<p align="center"><strong>Autonomous AI · Mobility · Blockchain · Native DSP · RF research · Realtime product architecture</strong></p>
+<p align="center"><a href="#maya-codex-nexus">MAYA</a> · <a href="#systems-portfolio">Systems</a> · <a href="#blockchain-systems-lab">Blockchain</a> · <a href="#engineering-activity">Activity</a> · <a href="https://gonzo-max2.github.io/gonzo-max2/">Interactive Profile OS</a></p>
 <img src="./assets/continuum-divider.svg" alt="" width="100%">
 
 ## Operating profile
 
-I design and build systems where **reasoning, execution, verification, and evidence remain one continuous object**.
+I design systems where **reasoning, execution, verification, and evidence remain one continuous object**.
 
-My work concentrates on autonomous development environments, local model orchestration, mobility platforms, secure runtime boundaries, native desktop systems, real-time interfaces, audio/DSP products, RF-sensing research, recovery tooling, and production-grade interaction architecture.
+Building proof-native autonomous systems, local-first AI infrastructure, mobility platforms, blockchain architecture, and instrument-grade products.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<table><tr><td width="50%" valign="top">
 
-### Current focus
+### Current mission
 
-- Proof-native autonomous engineering
-- Local-first model and tool orchestration
-- Deterministic agent runtimes
-- Sandboxed command execution
-- Event-sourced desktop applications
-- Mobile mobility and dispatch products
-- Real-time audio and DSP systems
-- RF-sensing and telemetry research
-- High-density professional UI systems
+**MAYA Codex Nexus 6.6.1**
 
-</td>
-<td width="50%" valign="top">
+Rust control plane, verified autonomous execution, and model orchestration.
+
+</td><td width="50%" valign="top">
 
 ### Delivery standard
 
@@ -54,120 +33,30 @@ My work concentrates on autonomous development environments, local model orchest
 - Measured performance over decorative motion
 - Complete systems over disconnected prototypes
 
-</td>
-</tr>
-</table>
+</td></tr></table>
 
 ## MAYA Codex Nexus
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/maya-system-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/maya-system-light.svg">
-  <img alt="MAYA Codex Nexus system architecture" src="./assets/maya-system-dark.svg" width="100%">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/maya-system-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/maya-system-light.svg"><img alt="MAYA Codex Nexus proof-native execution architecture" src="./assets/maya-system-dark.svg" width="100%"></picture>
 
-**MAYA Codex Nexus** is a local-first autonomous engineering workstation built around an explicit execution continuum:
+**MAYA Codex Nexus** is a local-first autonomous engineering workstation built around:
 
 > Instruction → Observe → Frame → Decide → Act → Verify → Learn → Receipt
 
-The system is designed to keep operator intent, tool activity, workspace changes, runtime failures, verification results, and final evidence causally connected.
+Its core invariant is simple: **a completion claim is not complete until its evidence is inspectable**.
 
-<table>
-<tr>
-<td width="33%" valign="top">
+## Systems portfolio
 
-### Runtime
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/systems-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/generated/systems-light.svg"><img alt="Nine-system engineering portfolio" src="./assets/generated/systems-dark.svg" width="100%"></picture>
 
-Tauri desktop shell, Rust-native bridge, FastAPI sidecar, SSE event transport, transactional worktrees, persistent receipts, and deterministic recovery.
-
-</td>
-<td width="33%" valign="top">
-
-### Intelligence
-
-Local and remote inference gateways, model routing, specialist agents, project memory, retrieval, evidence projection, and safe cognition summaries.
-
-</td>
-<td width="33%" valign="top">
-
-### Interface
-
-Adaptive desktop shell, mission timeline, cognition ribbon, Continuum proof spine, contextual surfaces, autonomous routing, and exact state restoration.
-
-</td>
-</tr>
-</table>
-
-<details>
-<summary><strong>MAYA engineering invariants</strong></summary>
-
-<br>
-
-1. No completion claim without inspectable evidence.
-2. No raw private chain-of-thought in operator-visible surfaces.
-3. No destructive workspace mutation outside explicit policy.
-4. No runtime outage may collapse the desktop shell.
-5. No duplicate UI authority for the same operational fact.
-6. No autonomous navigation may steal focus from active operator work.
-7. No release receipt may be reused from a previous build.
-8. No performance claim may be accepted without a measured gate.
-
-</details>
-
-## Engineering doctrine
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Proof-native execution
-
-Every significant operation produces a traceable chain from intent to action, artifact, verification, and receipt. The interface exposes evidence without turning the product into a telemetry dashboard.
-
-</td>
-<td width="50%" valign="top">
-
-### Local-first authority
-
-Projects, terminal state, repositories, model execution, indexes, and evidence remain locally controlled. Cloud models are optional providers—not architectural authorities.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Safety by containment
-
-Autonomous execution is constrained through policy, isolated workspaces, sandboxing, approval boundaries, secret separation, and explicit recovery paths.
-
-</td>
-<td width="50%" valign="top">
-
-### Instrument-grade interaction
-
-Dense interfaces must remain legible, responsive, keyboard-complete, accessible, and operationally truthful. Motion exists only when it communicates state.
-
-</td>
-</tr>
-</table>
-
-## Selected systems
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/portfolio-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/portfolio-light.svg">
-  <img alt="GONZO systems portfolio across autonomous engineering, mobility, real-time interaction, audio, RF sensing, forensics, and UI quality automation" src="./assets/portfolio-dark.svg" width="100%">
-</picture>
-
-<table>
-<tr>
+<table><tr>
 <td width="50%" valign="top">
 
 ### MAYA Codex Nexus
 
-Autonomous engineering workstation with proof-native execution, specialist agents, model orchestration, transactional workspaces, autonomous context routing, and receipt-backed runtime evidence.
+Local-first autonomous engineering workstation with proof-native execution, specialist agents, transactional workspaces, model routing, and runtime receipts.
 
-`Tauri` `Rust` `Python` `FastAPI` `React` `TypeScript` `SQLite` `Ollama`
+`Rust` `Tauri` `Python` `FastAPI` `React` `TypeScript` `SQLite` `Ollama`
 
 **Status:** private active development
 
@@ -176,20 +65,19 @@ Autonomous engineering workstation with proof-native execution, specialist agent
 
 ### Vozime
 
-Mobile rider-and-driver platform built around a complete trip lifecycle, role-aware navigation, high-trust location interactions, realtime operational feedback, polished notifications, and a premium mobile design system.
+Rider-and-driver mobile platform with role-aware navigation, trip lifecycle state, maps, realtime feedback, trusted notifications, and a premium mobile design system.
 
-`React Native` `Expo` `TypeScript` `Mobile UX` `Maps` `Realtime state`
+`React Native` `Expo` `TypeScript` `Maps` `Realtime state` `Mobile UX`
 
 **Status:** private active development
 
 </td>
-</tr>
-<tr>
+</tr><tr>
 <td width="50%" valign="top">
 
 ### AURELIS
 
-Real-time interactive engine focused on deterministic state, velocity-driven motion, synchronized audio and haptics, pooled visual effects, responsive presentation, and measurable runtime discipline.
+Deterministic realtime presentation engine with velocity-driven motion, synchronized audio and haptics, pooled effects, responsive interaction, and runtime performance gates.
 
 `TypeScript` `React` `Canvas` `Web Audio` `Realtime systems`
 
@@ -200,22 +88,21 @@ Real-time interactive engine focused on deterministic state, velocity-driven mot
 
 ### DERAMA Studio
 
-Native audio workstation and DSP system combining professional production workflow, Playlist, Channel Rack, Piano Roll, Mixer, Audio Editor, automation, synthesis, sampling, and JUCE-based processing.
+Professional audio-workstation architecture spanning playlist, channel rack, piano roll, mixer, automation, synthesis, sampling, editing, and native JUCE DSP.
 
 `C++` `JUCE` `DSP` `Audio architecture` `Desktop UI`
 
 **Status:** private R&D
 
 </td>
-</tr>
-<tr>
+</tr><tr>
 <td width="50%" valign="top">
 
 ### AETHER RF Sense
 
-Experimental real-input-only RF sensing system exploring movement inference from commodity Wi-Fi measurements, operator-visible calibration, resilient acquisition, and realtime signal visualization.
+Real-input-only Wi-Fi telemetry research exploring movement inference, resilient acquisition, operator-visible calibration, confidence, and realtime signal visualization.
 
-`Python` `Signal processing` `Wi-Fi telemetry` `Realtime visualization` `Local-first`
+`Python` `Signal processing` `Wi-Fi telemetry` `Realtime visualization`
 
 **Status:** experimental research prototype
 
@@ -224,20 +111,19 @@ Experimental real-input-only RF sensing system exploring movement inference from
 
 ### CredTrace Local Recovery Console
 
-Local forensic and recovery console with bounded recursive scanning, browser-profile intelligence, archive inspection, resumable execution, redacted findings, persistent evidence, and localhost-only operation.
+Bounded local recovery console with recursive scanning, browser-profile intelligence, archive inspection, resumable execution, redacted findings, and persistent evidence.
 
 `Python` `SQLite` `Forensics` `Recovery tooling` `Local-first`
 
 **Status:** private research system
 
 </td>
-</tr>
-<tr>
+</tr><tr>
 <td width="50%" valign="top">
 
 ### UI_DEBUG_MCP_PRO
 
-Automated UI quality system that turns browser runtime diagnostics, uncaught exceptions, authentication failures, accessibility audits, and visual regression evidence into fail-closed CI gates.
+Fail-closed UI quality automation for browser exceptions, authentication failures, accessibility audits, runtime diagnostics, visual evidence, and CI receipts.
 
 `Playwright` `Accessibility` `Runtime diagnostics` `CI` `Evidence receipts`
 
@@ -248,54 +134,55 @@ Automated UI quality system that turns browser runtime diagnostics, uncaught exc
 
 ### Aether Audio Lab
 
-Native audio and synthesis research spanning three-dimensional reverb, modulation systems, advanced synthesizer architecture, realtime visualization, and instrument-grade control surfaces.
+Native audio research spanning three-dimensional reverb, modulation, advanced synthesis, realtime visualization, and instrument-grade control surfaces.
 
 `C++` `JUCE` `DSP` `Reverb` `Synthesis` `Realtime audio`
 
 **Status:** private DSP R&D
 
 </td>
-</tr>
-</table>
+</tr><tr>
+<td width="50%" valign="top">
 
-## Architecture and stack
+### Blockchain Systems Lab
 
-| Domain | Primary technologies |
-|---|---|
-| Native desktop | Rust, Tauri, C++, JUCE |
-| Mobile products | React Native, Expo, TypeScript, maps, notifications, role-aware state |
-| Product interface | TypeScript, React, CSS Modules, Canvas/Skia where justified |
-| Runtime services | Python, FastAPI, SSE, SQLite |
-| Model systems | Ollama, OpenAI-compatible gateways, local embeddings, retrieval |
-| Realtime and signal systems | Web Audio, DSP, RF telemetry, deterministic animation |
-| Infrastructure | Linux, Docker/OCI boundaries, Git worktrees, CI verification |
-| Engineering quality | Type safety, deterministic state, accessibility, performance receipts |
+Research track for cryptographic receipts, smart-contract safety, verifiable automation, event-sourced ledgers, zero-knowledge architecture, and disciplined on-chain/off-chain boundaries.
 
-<img src="./assets/continuum-divider.svg" alt="" width="100%">
+`Cryptography` `Smart contracts` `Event sourcing` `ZK research` `Rust`
+
+**Status:** research direction
+
+</td>
+<td width="50%"></td>
+</tr></table>
+
+## Blockchain Systems Lab
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/blockchain-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/generated/blockchain-light.svg"><img alt="Blockchain proof-chain architecture" src="./assets/generated/blockchain-dark.svg" width="100%"></picture>
+
+The blockchain track is explicitly a **research direction**, focused on cryptographic execution receipts, event-sourced ledger integrity, smart-contract safety, verifiable autonomous actions, zero-knowledge proof architecture, and honest on-chain/off-chain boundaries.
+
+The interactive Pages experience includes a local SHA-256 proof-chain demonstrator that detects tampering without a wallet, extension, or external blockchain service.
+
+## Capability maturity
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/capabilities-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/generated/capabilities-light.svg"><img alt="Engineering capability maturity matrix" src="./assets/generated/capabilities-dark.svg" width="100%"></picture>
 
 ## Engineering activity
 
-The panel below is generated from GitHub's API by this repository's own workflow. It does not depend on an external profile-stat rendering service.
+The panel below is generated from GitHub's API by this repository's own workflow.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img alt="GitHub engineering activity for gonzo-max2" src="./assets/activity-dark.svg" width="100%">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg"><img alt="Verified GitHub engineering activity" src="./assets/activity-dark.svg" width="100%"></picture>
 
 ## Collaboration model
 
-I work best on projects that require architectural depth rather than superficial feature assembly:
-
 - Autonomous developer tooling
-- Native desktop applications
-- Local AI infrastructure
-- Secure execution environments
-- High-performance interaction systems
+- Secure local AI infrastructure
+- Mobility and dispatch platforms
+- Blockchain verification and cryptographic receipt systems
+- Native desktop and audio software
+- RF telemetry and scientific interfaces
 - Recovery, evidence, and verification tooling
-- Mobility, dispatch, and role-aware mobile platforms
-- Audio, real-time graphics, RF telemetry, and complex product interfaces
+- High-performance, accessibility-complete interaction systems
 
-<p align="center">
-  <strong>Build locally. Verify everything. Ship with evidence.</strong>
-</p>
+<p align="center"><strong>Build locally. Verify everything. Ship with evidence.</strong></p>

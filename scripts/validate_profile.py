@@ -32,17 +32,23 @@ def main() -> int:
         "assets/hero-light.svg",
         "assets/maya-system-dark.svg",
         "assets/maya-system-light.svg",
-        "assets/portfolio-dark.svg",
-        "assets/portfolio-light.svg",
         "assets/activity-dark.svg",
         "assets/activity-light.svg",
         "assets/continuum-divider.svg",
+        "assets/generated/hero-dark.svg",
+        "assets/generated/hero-light.svg",
+        "assets/generated/systems-dark.svg",
+        "assets/generated/systems-light.svg",
+        "assets/generated/blockchain-dark.svg",
+        "assets/generated/blockchain-light.svg",
+        "assets/generated/capabilities-dark.svg",
+        "assets/generated/capabilities-light.svg",
     }
     for rel in expected:
         if not (ROOT / rel).is_file():
             failures.append(f"missing required file: {rel}")
 
-    for svg in (ROOT / "assets").glob("*.svg"):
+    for svg in (ROOT / "assets").rglob("*.svg"):
         svg_text = svg.read_text(encoding="utf-8")
         if not svg_text.lstrip().startswith("<svg"):
             failures.append(f"invalid SVG root: {svg.relative_to(ROOT)}")

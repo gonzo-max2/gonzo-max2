@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070a0e">
+  <meta name="description" content="GONZO // SYSTEMS — proof-native autonomous engineering, mobility, blockchain, DSP, RF research, and realtime product architecture.">
+  <meta property="og:title" content="GONZO // SYSTEMS">
+  <meta property="og:description" content="Engineering systems that prove what they actually did.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/hero-dark.svg">
+  <title>GONZO // SYSTEMS — Profile OS</title>
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="field" aria-hidden="true"></canvas><div class="cursor-field" aria-hidden="true"></div>
+  <header class="topbar" data-reveal>
+    <a class="brand" href="#top" aria-label="GONZO systems home"><span class="brand-mark" aria-hidden="true"></span><span>GONZO // SYSTEMS</span></a>
+    <nav aria-label="Primary navigation"><a href="#systems">Systems</a><a href="#continuum">Continuum</a><a href="#blockchain">Blockchain</a><a href="#cases">Cases</a></nav>
+    <div class="topbar-actions"><span class="status"><span class="status-dot"></span> Active</span><button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button></div>
+  </header>
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="hero-copy" data-reveal><p class="eyebrow">AUTONOMOUS AI · MOBILITY · BLOCKCHAIN · DSP · RF</p><h1>Engineering systems that <span>prove</span> what they actually did.</h1><p class="hero-lede">Local-first architecture, deterministic execution, cryptographic evidence, instrument-grade interfaces, and measurable runtime discipline.</p><div class="hero-actions"><a class="button primary" href="#systems">Explore systems</a><a class="button secondary" href="https://github.com/gonzo-max2">Open GitHub</a></div><dl class="hero-stats" aria-label="Profile summary"><div><dt>Systems</dt><dd id="system-count">9</dd></div><div><dt>Flagship</dt><dd>MAYA 6.6.1</dd></div><div><dt>Mode</dt><dd>Local-first</dd></div><div><dt>Base</dt><dd>Sofia</dd></div></dl></div>
+      <div class="hero-instrument" data-reveal><div class="instrument-header"><span>PROOF CONTINUUM</span><span class="mono">LIVE MODEL</span></div><div class="orbit" aria-hidden="true"><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orbit-core">G</div><span class="orbit-node node-a">AI</span><span class="orbit-node node-b">RF</span><span class="orbit-node node-c">DSP</span><span class="orbit-node node-d">CHAIN</span></div><div class="instrument-flow" aria-label="Instruction to receipt continuum"><span>Intent</span><i></i><span>Frame</span><i></i><span>Act</span><i></i><span>Verify</span><i></i><span>Receipt</span></div></div>
+    </section>
+    <section class="marquee" aria-label="Engineering domains"><div class="marquee-track"><span>AUTONOMOUS ENGINEERING</span><span>MOBILITY</span><span>BLOCKCHAIN</span><span>REALTIME INTERACTION</span><span>NATIVE DSP</span><span>RF SENSING</span><span>FORENSICS</span><span>QUALITY AUTOMATION</span><span aria-hidden="true">AUTONOMOUS ENGINEERING</span><span aria-hidden="true">MOBILITY</span><span aria-hidden="true">BLOCKCHAIN</span><span aria-hidden="true">REALTIME INTERACTION</span></div></section>
+    <section class="section" id="systems"><header class="section-heading" data-reveal><p class="eyebrow">SYSTEMS CONSTELLATION</p><h2>Nine systems. One engineering standard.</h2><p>Private product development, internal tooling, and explicitly labelled research tracks.</p></header><div class="filter-bar" role="toolbar" aria-label="Filter systems" data-reveal><button class="filter active" type="button" data-filter="all">All</button><button class="filter" type="button" data-filter="integrated">Integrated</button><button class="filter" type="button" data-filter="prototype">Prototype</button><button class="filter" type="button" data-filter="research">Research</button></div><div class="system-grid" id="system-grid" aria-live="polite"></div></section>
+    <section class="section continuum-section" id="continuum"><header class="section-heading" data-reveal><p class="eyebrow">MAYA CODEX NEXUS</p><h2>Instruction becomes inspectable evidence.</h2></header><div class="continuum-panel" data-reveal><div class="continuum-line" aria-hidden="true"><span></span></div><ol class="continuum-steps"><li><b>01</b><h3>Observe</h3><p>Acquire workspace, runtime, policy, and operator context.</p></li><li><b>02</b><h3>Frame</h3><p>Build a safe, display-ready model of the mission.</p></li><li><b>03</b><h3>Decide</h3><p>Select an explicit plan, boundary, and verification strategy.</p></li><li><b>04</b><h3>Act</h3><p>Execute through constrained tools and transactional workspaces.</p></li><li><b>05</b><h3>Verify</h3><p>Inspect outputs, tests, diffs, failures, and contradictions.</p></li><li><b>06</b><h3>Receipt</h3><p>Persist evidence and restore the exact causal chain.</p></li></ol></div></section>
+    <section class="section blockchain-section" id="blockchain"><header class="section-heading" data-reveal><p class="eyebrow">BLOCKCHAIN SYSTEMS LAB</p><h2>Cryptographic receipts, not decorative Web3.</h2><p>This local demonstration links intent, policy, action, proof, and receipt using SHA-256. Modify any block and the chain becomes invalid.</p></header><div class="ledger-shell" data-reveal><div class="ledger-toolbar"><div><span class="ledger-status valid" id="ledger-status"><i></i> Chain valid</span><span class="mono" id="ledger-height">Height 5</span></div><div><button class="button secondary compact" id="tamper-chain" type="button">Tamper block</button><button class="button primary compact" id="verify-chain" type="button">Verify chain</button></div></div><div class="ledger-track" id="ledger-track" aria-label="Interactive cryptographic proof chain"></div><div class="ledger-explain"><div><span>01</span><p>Every block commits to its own payload.</p></div><div><span>02</span><p>Every block includes the previous digest.</p></div><div><span>03</span><p>One mutation invalidates every dependent receipt.</p></div></div></div></section>
+    <section class="section cases-section" id="cases"><header class="section-heading" data-reveal><p class="eyebrow">ENGINEERING CASES</p><h2>Depth over badge walls.</h2></header><div class="case-tabs" role="tablist" aria-label="Engineering case studies" data-reveal></div><article class="case-panel" id="case-panel" data-reveal></article></section>
+    <section class="section maturity-section" id="maturity"><header class="section-heading" data-reveal><p class="eyebrow">MATURITY DISCLOSURE</p><h2>Research is not presented as production.</h2></header><div class="maturity-table" id="maturity-table" data-reveal></div></section>
+    <section class="section closing"><div class="closing-panel" data-reveal><p class="eyebrow">CURRENT MISSION</p><h2>Build locally. Verify everything. Ship with evidence.</h2><p id="current-mission">Rust control plane, verified autonomous execution, and model orchestration.</p><div class="hero-actions"><a class="button primary" href="https://github.com/gonzo-max2">View GitHub profile</a><a class="button secondary" href="#top">Return to top</a></div></div></section>
+  </main>
+  <footer><span>GONZO // SYSTEMS</span><span class="mono">SOFIA · <time id="sofia-time">--:--</time></span></footer>
+</body></html>

@@ -1,0 +1,27 @@
+{
+  "schema": "gonzo-profile-verification/v1",
+  "passed": true,
+  "systems": 9,
+  "readme_asset_references": 19,
+  "errors": [],
+  "sha256": {
+    "README.md": "cf70d8a53262ee0d219e4b37e2eea9b696420cc1d09a55ae7012ee1340ad961b",
+    "content/profile.json": "2622f2402e763b1b9615b927332da559daee01ed5a4e24bd54bd5c82ebe849c4",
+    "docs/index.html": "d921aff89a024c9c5fb3c4bc93e8a23c1ad58979667cde126457fd2c8bf92093",
+    "docs/styles.css": "ebea540d7d4cab300e81b056f3c956db0558988c126ec74dee25b53160af74d8",
+    "docs/app.js": "4841c20b3be7414e37510069398dbe8cd56b7f03b3688d87d9b24b5d33a6e67a",
+    "docs/data/profile.json": "58d28242f8fcc639cacb4de865380406d8a4fbc9a23e7e2f3b71437becae1e2b",
+    "docs/site.webmanifest": "e20b8d9ca5a9cc9cf1f5aa7eec4fc6e791064b667665da9bb587a6193680a1c9",
+    "docs/sw.js": "2413c168307a03400d5fa35f505367d4a3452ba21970ebb2dad4e841bad24684",
+    "PROFILE_OS_ARCHITECTURE.md": "bd95ab6b110c03ac09c1c2ef7db60d4d9d20d0bac0ecd962f18498851c4c14f3",
+    "DEPLOYMENT.md": "ca60d75dc6c6d150cfa3a3a64db601b6ae971060b3a509032020bf3a018358de",
+    "assets/generated/hero-dark.svg": "b29997e6e3235e5452685360b4654ff8f4c3020b02310f5490a87755513afa30",
+    "assets/generated/hero-light.svg": "f91a7d40aae5abe4532d9fcca8160e048dc47ef2ce0eb57bf80eba895823101f",
+    "assets/generated/systems-dark.svg": "1adbd2d012575889b621c391d8c04f2abb301f7fcae9a5f9f8e53fbda953ea51",
+    "assets/generated/systems-light.svg": "c423e7072ecfab89f0b23940914e940299a6cf4efcbbbdfc463c17b3394c18da",
+    "assets/generated/blockchain-dark.svg": "5b244429c5dff419915c6559bc24e89239e5770bf089d323ff397a31094713e2",
+    "assets/generated/blockchain-light.svg": "14360eb76782f221df44bf1821075074e99f9e63d71ae6f57a17b04a44798c85",
+    "assets/generated/capabilities-dark.svg": "fa99122c01fa45b98352653420b0a88c32504e736d0a79a9e16dc8b4e4da3b75",
+    "assets/generated/capabilities-light.svg": "a9ca3301c7c6d916d59fa793b1a8d04e1f74cca37a704c2bcbfd6504949a63c6"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GONZO // SYSTEMS Profile OS",
+  "short_name": "GONZO",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#070a0e",
+  "theme_color": "#070a0e",
+  "description": "Proof-native autonomous engineering, mobility, blockchain, DSP, RF research, and realtime product architecture."
+}

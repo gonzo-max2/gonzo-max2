@@ -117,3 +117,8 @@ chmod 700 scripts/verify_profile_remote.sh
 ```
 
 Do not pass tokens as command-line arguments, embed them in Git URLs, place them in shell history, or save them in `.env` files.
+
+
+## Profile OS and GitHub Pages
+
+Set **Settings → Pages → Source** to **GitHub Actions**, run **Deploy Profile OS**, and open `https://gonzo-max2.github.io/gonzo-max2/`. The Pages layer includes bounded Canvas motion, scroll reveal, pointer tilt, animated proof continuum, an interactive SHA-256 blockchain proof chain, dark/light themes, reduced-motion support, and offline caching.

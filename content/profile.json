@@ -1,0 +1,302 @@
+{
+  "schema": "gonzo-profile-os/v1",
+  "identity": {
+    "name": "Mihail Petkov",
+    "username": "gonzo-max2",
+    "brand": "GONZO // SYSTEMS",
+    "location": "Sofia, Bulgaria",
+    "timezone": "Europe/Sofia",
+    "headline": "Engineering systems that prove what they actually did.",
+    "bio": "Building proof-native autonomous systems, local-first AI infrastructure, mobility platforms, blockchain architecture, and instrument-grade products.",
+    "principles": [
+      "Runtime truth over simulated completion",
+      "Typed contracts over implicit coupling",
+      "Receipts over unsupported claims",
+      "Graceful degradation over blank screens",
+      "Measured performance over decorative motion",
+      "Complete systems over disconnected prototypes"
+    ]
+  },
+  "current": {
+    "flagship": "MAYA Codex Nexus",
+    "release": "6.6.1",
+    "status": "ACTIVE DEVELOPMENT",
+    "mission": "Rust control plane, verified autonomous execution, and model orchestration"
+  },
+  "domains": [
+    "AUTONOMOUS AI",
+    "MOBILITY",
+    "BLOCKCHAIN",
+    "DSP",
+    "RF SENSING",
+    "FORENSICS",
+    "REALTIME UX"
+  ],
+  "systems": [
+    {
+      "id": "maya",
+      "name": "MAYA Codex Nexus",
+      "short": "MAYA",
+      "domain": "Autonomous engineering",
+      "status": "private active development",
+      "maturity": "integrated",
+      "accent": "#2AD7B5",
+      "summary": "Local-first autonomous engineering workstation with proof-native execution, specialist agents, transactional workspaces, model routing, and runtime receipts.",
+      "stack": [
+        "Rust",
+        "Tauri",
+        "Python",
+        "FastAPI",
+        "React",
+        "TypeScript",
+        "SQLite",
+        "Ollama"
+      ]
+    },
+    {
+      "id": "vozime",
+      "name": "Vozime",
+      "short": "VOZIME",
+      "domain": "Mobility platform",
+      "status": "private active development",
+      "maturity": "integrated",
+      "accent": "#75BAFF",
+      "summary": "Rider-and-driver mobile platform with role-aware navigation, trip lifecycle state, maps, realtime feedback, trusted notifications, and a premium mobile design system.",
+      "stack": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Maps",
+        "Realtime state",
+        "Mobile UX"
+      ]
+    },
+    {
+      "id": "aurelis",
+      "name": "AURELIS",
+      "short": "AURELIS",
+      "domain": "Realtime interaction",
+      "status": "private product development",
+      "maturity": "integrated",
+      "accent": "#F1B85B",
+      "summary": "Deterministic realtime presentation engine with velocity-driven motion, synchronized audio and haptics, pooled effects, responsive interaction, and runtime performance gates.",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Canvas",
+        "Web Audio",
+        "Realtime systems"
+      ]
+    },
+    {
+      "id": "derama",
+      "name": "DERAMA Studio",
+      "short": "DERAMA",
+      "domain": "Native audio workstation",
+      "status": "private R&D",
+      "maturity": "prototype",
+      "accent": "#B79CFF",
+      "summary": "Professional audio-workstation architecture spanning playlist, channel rack, piano roll, mixer, automation, synthesis, sampling, editing, and native JUCE DSP.",
+      "stack": [
+        "C++",
+        "JUCE",
+        "DSP",
+        "Audio architecture",
+        "Desktop UI"
+      ]
+    },
+    {
+      "id": "aether-rf",
+      "name": "AETHER RF Sense",
+      "short": "AETHER RF",
+      "domain": "RF sensing research",
+      "status": "experimental research prototype",
+      "maturity": "research",
+      "accent": "#58D6E7",
+      "summary": "Real-input-only Wi-Fi telemetry research exploring movement inference, resilient acquisition, operator-visible calibration, confidence, and realtime signal visualization.",
+      "stack": [
+        "Python",
+        "Signal processing",
+        "Wi-Fi telemetry",
+        "Realtime visualization"
+      ]
+    },
+    {
+      "id": "credtrace",
+      "name": "CredTrace Local Recovery Console",
+      "short": "CREDTRACE",
+      "domain": "Recovery and forensics",
+      "status": "private research system",
+      "maturity": "integrated",
+      "accent": "#FF9C67",
+      "summary": "Bounded local recovery console with recursive scanning, browser-profile intelligence, archive inspection, resumable execution, redacted findings, and persistent evidence.",
+      "stack": [
+        "Python",
+        "SQLite",
+        "Forensics",
+        "Recovery tooling",
+        "Local-first"
+      ]
+    },
+    {
+      "id": "ui-debug",
+      "name": "UI_DEBUG_MCP_PRO",
+      "short": "UI DEBUG",
+      "domain": "Quality automation",
+      "status": "internal engineering tooling",
+      "maturity": "integrated",
+      "accent": "#54D99A",
+      "summary": "Fail-closed UI quality automation for browser exceptions, authentication failures, accessibility audits, runtime diagnostics, visual evidence, and CI receipts.",
+      "stack": [
+        "Playwright",
+        "Accessibility",
+        "Runtime diagnostics",
+        "CI",
+        "Evidence receipts"
+      ]
+    },
+    {
+      "id": "aether-audio",
+      "name": "Aether Audio Lab",
+      "short": "AETHER AUDIO",
+      "domain": "DSP and synthesis",
+      "status": "private DSP R&D",
+      "maturity": "prototype",
+      "accent": "#C895FF",
+      "summary": "Native audio research spanning three-dimensional reverb, modulation, advanced synthesis, realtime visualization, and instrument-grade control surfaces.",
+      "stack": [
+        "C++",
+        "JUCE",
+        "DSP",
+        "Reverb",
+        "Synthesis",
+        "Realtime audio"
+      ]
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain Systems Lab",
+      "short": "CHAIN LAB",
+      "domain": "Verifiable decentralized systems",
+      "status": "research direction",
+      "maturity": "research",
+      "accent": "#37E5A2",
+      "summary": "Research track for cryptographic receipts, smart-contract safety, verifiable automation, event-sourced ledgers, zero-knowledge architecture, and disciplined on-chain/off-chain boundaries.",
+      "stack": [
+        "Cryptography",
+        "Smart contracts",
+        "Event sourcing",
+        "ZK research",
+        "Rust"
+      ]
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": "maya",
+      "name": "MAYA Codex Nexus",
+      "problem": "Autonomous developer tools often claim success without preserving causal evidence.",
+      "system": "A local-first desktop runtime that binds intent, cognition projection, isolated action, workspace mutation, verification, and receipts into one event-sourced continuum.",
+      "proof": [
+        "251 frontend tests",
+        "141 backend/security tests",
+        "121.4 KiB initial shell",
+        "Token-auth regression coverage"
+      ]
+    },
+    {
+      "id": "vozime",
+      "name": "Vozime",
+      "problem": "Mobility applications become confusing when rider, driver, map, payment, and trip state diverge.",
+      "system": "A role-aware mobile state architecture with deterministic trip lifecycle, responsive map context, trustworthy notifications, and platform-native interaction discipline.",
+      "proof": [
+        "Rider/driver state separation",
+        "Trip lifecycle authority",
+        "Realtime feedback model",
+        "Premium mobile design system"
+      ]
+    },
+    {
+      "id": "derama",
+      "name": "DERAMA Studio",
+      "problem": "Audio tools lose creative speed when routing, editing, pattern, timeline, and DSP models are fragmented.",
+      "system": "A native workstation architecture aligning channel, pattern, playlist, editor, mixer, automation, and DSP state while preserving low-latency interaction.",
+      "proof": [
+        "Native JUCE architecture",
+        "Realtime-safe DSP boundaries",
+        "Complete production workflow",
+        "Instrument-grade controls"
+      ]
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain Systems Lab",
+      "problem": "Distributed systems are often presented as immutable without exposing verification boundaries.",
+      "system": "A research architecture that treats cryptographic hashes, execution receipts, contract policy, and on-chain/off-chain state transitions as inspectable proof objects.",
+      "proof": [
+        "Client-side SHA-256 proof chain",
+        "Tamper detection demonstration",
+        "No external wallet dependency",
+        "Explicit research status"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Autonomous runtime",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": true
+    },
+    {
+      "name": "Mobility platform",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": false
+    },
+    {
+      "name": "Realtime interaction",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": true
+    },
+    {
+      "name": "Native DSP",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": false
+    },
+    {
+      "name": "RF sensing",
+      "research": true,
+      "prototype": true,
+      "integrated": false,
+      "verified": false
+    },
+    {
+      "name": "Recovery/forensics",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": true
+    },
+    {
+      "name": "UI quality automation",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": true
+    },
+    {
+      "name": "Blockchain systems",
+      "research": true,
+      "prototype": true,
+      "integrated": false,
+      "verified": false
+    }
+  ]
+}

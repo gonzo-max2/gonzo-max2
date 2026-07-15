@@ -1,24 +1,8 @@
 {
-  "schema": "gonzo-profile-os-manifest/v1",
-  "generated_at": "2026-07-15",
+  "schema": "gonzo-profile-build/v1",
   "systems": 9,
   "case_studies": 4,
-  "features": [
-    "compiled README",
-    "dual-theme animated SVG",
-    "GitHub Pages Profile OS",
-    "adaptive Canvas constellation",
-    "scroll-reveal motion",
-    "pointer tilt",
-    "interactive SHA-256 proof chain",
-    "blockchain research presentation",
-    "reduced-motion support",
-    "forced-colors support",
-    "offline service worker",
-    "self-verifying CI",
-    "secure deployment scripts"
-  ],
-  "contains_credentials": false,
+  "generated_assets": 8,
   "files": {
     ".github/workflows/build-profile-os.yml": {
       "sha256": "3fbe215b3f8e3692d62d55c62dc4af64a030201edee170b9c1f34526fdc012b4",
@@ -43,6 +27,10 @@
     "LICENSE": {
       "sha256": "a6b14dbcc2ebbf3dedcd3abf18b48ef99d0ea36f1444c37d5c5794dd96dda292",
       "bytes": 1070
+    },
+    "PROFILE_MANIFEST.json": {
+      "sha256": "328a6ae4e4391d6e68cf7b7f517e206dcd7b4a4d454281ae5150809b57048ea2",
+      "bytes": 8549
     },
     "PROFILE_OS_ARCHITECTURE.md": {
       "sha256": "bd95ab6b110c03ac09c1c2ef7db60d4d9d20d0bac0ecd962f18498851c4c14f3",
@@ -203,14 +191,6 @@
     "docs/sw.js": {
       "sha256": "2413c168307a03400d5fa35f505367d4a3452ba21970ebb2dad4e841bad24684",
       "bytes": 648
-    },
-    "receipts/profile-build.json": {
-      "sha256": "db69c6ec8bc98d6058407275abf4d4377a1b8d77ead2188b546a5ae19db7e78b",
-      "bytes": 7924
-    },
-    "receipts/security-and-structure.json": {
-      "sha256": "e946213bed36a936ffc8c54baf8a6c5b2b2713417694b647d34ebfe142f5a44b",
-      "bytes": 1957
     },
     "scripts/build_profile.py": {
       "sha256": "460ee80b4e0b51f180939ef38087733f9c6f1058a3bb982d493587a48da6a600",
