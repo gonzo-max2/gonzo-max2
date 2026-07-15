@@ -1,6 +1,11 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=transparent&color=white&height=150&section=header&text=Gonzo%20I.&fontSize=80&animation=fadeIn" width="100%">
-  <p><b>Software Engineer • Systems Architect • Ex-Google</b></p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Gonzo%20I.&fontSize=80&animation=fadeIn" width="100%">
+  
+  <br/><br/>
+  
+  <a href="https://github.com/gonzo-max2">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Systems+Architect;Ex-Google;Bare-Metal+AI+Infrastructure;High-Frequency+Mobile+Apps" alt="Typing SVG" />
+  </a>
   <p>📍 Paris, France &nbsp;|&nbsp; 🗣️ EN / DE</p>
 </div>
 
@@ -19,7 +24,11 @@
 
 <br />
 
----
+<div align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="80%" />
+</div>
+
+<br />
 
 ### ⚡ Engineering Focus
 
@@ -42,7 +51,11 @@ I lead a specialized team focused on high-performance digital ecosystems:
 
 <br />
 
----
+<div align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="80%" />
+</div>
+
+<br />
 
 ### 📉 Contribution Graph
 
@@ -52,4 +65,11 @@ I lead a specialized team focused on high-performance digital ecosystems:
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gonzo-max2/gonzo-max2/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/gonzo-max2/gonzo-max2/output/github-contribution-grid-snake.svg">
   </picture>
+</div>
+
+<br />
+
+<!-- Footer -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%">
 </div>
