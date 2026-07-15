@@ -1,6 +1,20 @@
 {
-  "schema": "gonzo-profile-manifest/v1",
+  "schema": "gonzo-profile-manifest/v3",
   "profile": "gonzo-max2",
+  "portfolio_projects": [
+    "MAYA Codex Nexus",
+    "Vozime",
+    "AURELIS",
+    "DERAMA Studio",
+    "AETHER RF Sense",
+    "CredTrace Local Recovery Console",
+    "UI_DEBUG_MCP_PRO",
+    "Aether Audio Lab"
+  ],
+  "security": {
+    "contains_credentials": false,
+    "deployment_authentication": "hidden prompt or GH_TOKEN process environment"
+  },
   "files": {
     ".github/workflows/profile-metrics.yml": {
       "sha256": "3fef181f9326f69f2419314599ccff872a8af49e2b3f5ea631eabde3d774105f",
@@ -11,12 +25,12 @@
       "bytes": 472
     },
     "PROFILE_SETUP.md": {
-      "sha256": "692ace799988d01dc0e12dfeaa1d39bd3a0ecef5565b4b5d84df9cfed5863821",
-      "bytes": 2336
+      "sha256": "458f57aa5fbb4218248b6cdbb8559931a3a3bb24a7639d7aadd816bdc2fa005e",
+      "bytes": 3612
     },
     "README.md": {
-      "sha256": "abdd5441261383be3a1536ee33908bf3740cd72f0bb3c8674a571b208a19807b",
-      "bytes": 7607
+      "sha256": "a03f8329e27b5b4ce5079888ba80ad459b25f82a0487b3264fa37ff460f11e37",
+      "bytes": 10102
     },
     "SECURITY.md": {
       "sha256": "b476ecb296a3b155655f64a389cc88710299ceb3c62165dd345973badc61b46c",
@@ -50,13 +64,29 @@
       "sha256": "2fbd7296d4f68e067867a795c3c4fdf79b1d0ac4ec9e4ae4f60dae521d7c0ba4",
       "bytes": 5082
     },
+    "assets/portfolio-dark.svg": {
+      "sha256": "59da482af5b61a56d6c12fa181a2881ccd61d1508a1fba142abb3f9c6baceabc",
+      "bytes": 7360
+    },
+    "assets/portfolio-light.svg": {
+      "sha256": "e72b23b305a16514b0f840baa3293ac650e7b428cf548bcba6f31e0e346cb394",
+      "bytes": 7360
+    },
+    "scripts/deploy_profile_secure.sh": {
+      "sha256": "7f2325e757a73cea37ffea9260715e892a779401391855a54dc7c8869e922e91",
+      "bytes": 5663
+    },
     "scripts/generate_activity.py": {
       "sha256": "16dd6bc3617869015b96dddf6c5303118e9b287fd12401d3c26ba6121d2741fe",
       "bytes": 8650
     },
     "scripts/validate_profile.py": {
-      "sha256": "ca738e3fcb868f1bb3c13461bb7402bd781716ec2ecebac1c9bb1b7ea17ab099",
-      "bytes": 1884
+      "sha256": "ba2f5818f9dd7eb3cb5c76a70e121232e95c8b14b02f00af2839e86a87e7ab6b",
+      "bytes": 1959
+    },
+    "scripts/verify_profile_remote.sh": {
+      "sha256": "1988e9fad9072a0479e23fcae6bd9f697fa43d1c927571d8ad99dbd2b085b41d",
+      "bytes": 1738
     }
   }
 }

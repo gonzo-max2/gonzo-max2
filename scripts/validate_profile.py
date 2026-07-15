@@ -32,6 +32,8 @@ def main() -> int:
         "assets/hero-light.svg",
         "assets/maya-system-dark.svg",
         "assets/maya-system-light.svg",
+        "assets/portfolio-dark.svg",
+        "assets/portfolio-light.svg",
         "assets/activity-dark.svg",
         "assets/activity-light.svg",
         "assets/continuum-divider.svg",

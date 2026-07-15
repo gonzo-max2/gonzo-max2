@@ -1,0 +1,76 @@
+    <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+      <title id="title">GONZO systems portfolio</title>
+      <desc id="desc">Eight systems spanning autonomous engineering, mobility, real-time products, audio, RF sensing, forensics, and UI quality automation.</desc>
+      <rect width="1200" height="480" rx="16" fill="#FFFFFF"/>
+      <rect x="1" y="1" width="1198" height="478" rx="15" fill="none" stroke="#C9D3DC"/>
+      <text x="56" y="54" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="2">SYSTEMS PORTFOLIO</text>
+      <text x="56" y="92" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="700">One engineering standard across multiple product domains.</text>
+      <text x="56" y="119" fill="#607080" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">Autonomy · Mobility · Real-time systems · Audio DSP · RF research · Recovery · Quality engineering</text>
+      <g transform="translate(56 142)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#087C6B"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">01</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">MAYA</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">AUTONOMOUS ENGINEERING</text>
+  <circle cx="222" cy="27" r="5" fill="#087C6B"/>
+  <path d="M22 103H224" stroke="#087C6B" stroke-opacity="0.32"/>
+</g><g transform="translate(330 142)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#1769AA"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">02</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">VOZIME</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">MOBILITY PLATFORM</text>
+  <circle cx="222" cy="27" r="5" fill="#1769AA"/>
+  <path d="M22 103H224" stroke="#1769AA" stroke-opacity="0.32"/>
+</g><g transform="translate(604 142)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#845600"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">03</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">AURELIS</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">REAL-TIME INTERACTION</text>
+  <circle cx="222" cy="27" r="5" fill="#845600"/>
+  <path d="M22 103H224" stroke="#845600" stroke-opacity="0.32"/>
+</g><g transform="translate(878 142)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#6B4EC5"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">04</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">DERAMA</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">AUDIO WORKSTATION</text>
+  <circle cx="222" cy="27" r="5" fill="#6B4EC5"/>
+  <path d="M22 103H224" stroke="#6B4EC5" stroke-opacity="0.32"/>
+</g><g transform="translate(56 298)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#1769AA"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">05</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">AETHER RF</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">SIGNAL-SENSING R&D</text>
+  <circle cx="222" cy="27" r="5" fill="#1769AA"/>
+  <path d="M22 103H224" stroke="#1769AA" stroke-opacity="0.32"/>
+</g><g transform="translate(330 298)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#845600"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">06</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">CREDTRACE</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">LOCAL FORENSICS</text>
+  <circle cx="222" cy="27" r="5" fill="#845600"/>
+  <path d="M22 103H224" stroke="#845600" stroke-opacity="0.32"/>
+</g><g transform="translate(604 298)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#087C6B"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">07</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">UI DEBUG MCP</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">QUALITY AUTOMATION</text>
+  <circle cx="222" cy="27" r="5" fill="#087C6B"/>
+  <path d="M22 103H224" stroke="#087C6B" stroke-opacity="0.32"/>
+</g><g transform="translate(878 298)">
+  <rect width="246" height="126" rx="12" fill="#F1F5F8" stroke="#C9D3DC"/>
+  <rect x="0" y="0" width="4" height="126" rx="2" fill="#6B4EC5"/>
+  <text x="22" y="28" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.4">08</text>
+  <text x="22" y="61" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">AETHER AUDIO</text>
+  <text x="22" y="86" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="1">DSP + SYNTHESIS</text>
+  <circle cx="222" cy="27" r="5" fill="#6B4EC5"/>
+  <path d="M22 103H224" stroke="#6B4EC5" stroke-opacity="0.32"/>
+</g>
+      <circle cx="56" cy="450" r="5" fill="#087C6B"/>
+      <text x="72" y="454" fill="#607080" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11">Private active development and research systems · public-safe technical summaries</text>
+    </svg>

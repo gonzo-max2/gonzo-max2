@@ -24,7 +24,7 @@
 
 I design and build systems where **reasoning, execution, verification, and evidence remain one continuous object**.
 
-My work concentrates on autonomous development environments, local model orchestration, secure runtime boundaries, native desktop systems, real-time interfaces, recovery tooling, and production-grade interaction architecture.
+My work concentrates on autonomous development environments, local model orchestration, mobility platforms, secure runtime boundaries, native desktop systems, real-time interfaces, audio/DSP products, RF-sensing research, recovery tooling, and production-grade interaction architecture.
 
 <table>
 <tr>
@@ -37,6 +37,9 @@ My work concentrates on autonomous development environments, local model orchest
 - Deterministic agent runtimes
 - Sandboxed command execution
 - Event-sourced desktop applications
+- Mobile mobility and dispatch products
+- Real-time audio and DSP systems
+- RF-sensing and telemetry research
 - High-density professional UI systems
 
 </td>
@@ -150,13 +153,19 @@ Dense interfaces must remain legible, responsive, keyboard-complete, accessible,
 
 ## Selected systems
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/portfolio-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/portfolio-light.svg">
+  <img alt="GONZO systems portfolio across autonomous engineering, mobility, real-time interaction, audio, RF sensing, forensics, and UI quality automation" src="./assets/portfolio-dark.svg" width="100%">
+</picture>
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### MAYA Codex Nexus
 
-Autonomous engineering workstation with proof-native execution, specialist agents, local model orchestration, transactional workspaces, and runtime evidence.
+Autonomous engineering workstation with proof-native execution, specialist agents, model orchestration, transactional workspaces, autonomous context routing, and receipt-backed runtime evidence.
 
 `Tauri` `Rust` `Python` `FastAPI` `React` `TypeScript` `SQLite` `Ollama`
 
@@ -165,11 +174,11 @@ Autonomous engineering workstation with proof-native execution, specialist agent
 </td>
 <td width="50%" valign="top">
 
-### AURELIS
+### Vozime
 
-Real-time interactive product architecture focused on deterministic game state, synchronized animation, responsive presentation systems, and production runtime discipline.
+Mobile rider-and-driver platform built around a complete trip lifecycle, role-aware navigation, high-trust location interactions, realtime operational feedback, polished notifications, and a premium mobile design system.
 
-`TypeScript` `React` `Real-time systems` `Animation architecture`
+`React Native` `Expo` `TypeScript` `Mobile UX` `Maps` `Realtime state`
 
 **Status:** private active development
 
@@ -178,24 +187,72 @@ Real-time interactive product architecture focused on deterministic game state, 
 <tr>
 <td width="50%" valign="top">
 
-### CredTrace
+### AURELIS
 
-Local recovery and forensic analysis console with bounded scanning, persistent evidence, resumable execution, sanitized exports, and localhost-only operation.
+Real-time interactive engine focused on deterministic state, velocity-driven motion, synchronized audio and haptics, pooled visual effects, responsive presentation, and measurable runtime discipline.
 
-`Python` `SQLite` `Forensics` `Recovery tooling` `Local-first`
+`TypeScript` `React` `Canvas` `Web Audio` `Realtime systems`
 
-**Status:** private research system
+**Status:** private product development
 
 </td>
 <td width="50%" valign="top">
 
 ### DERAMA Studio
 
-Native audio-workstation and DSP research combining professional production workflow, high-density interaction, advanced audio editing, and JUCE-based processing.
+Native audio workstation and DSP system combining professional production workflow, Playlist, Channel Rack, Piano Roll, Mixer, Audio Editor, automation, synthesis, sampling, and JUCE-based processing.
 
 `C++` `JUCE` `DSP` `Audio architecture` `Desktop UI`
 
 **Status:** private R&D
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### AETHER RF Sense
+
+Experimental real-input-only RF sensing system exploring movement inference from commodity Wi-Fi measurements, operator-visible calibration, resilient acquisition, and realtime signal visualization.
+
+`Python` `Signal processing` `Wi-Fi telemetry` `Realtime visualization` `Local-first`
+
+**Status:** experimental research prototype
+
+</td>
+<td width="50%" valign="top">
+
+### CredTrace Local Recovery Console
+
+Local forensic and recovery console with bounded recursive scanning, browser-profile intelligence, archive inspection, resumable execution, redacted findings, persistent evidence, and localhost-only operation.
+
+`Python` `SQLite` `Forensics` `Recovery tooling` `Local-first`
+
+**Status:** private research system
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### UI_DEBUG_MCP_PRO
+
+Automated UI quality system that turns browser runtime diagnostics, uncaught exceptions, authentication failures, accessibility audits, and visual regression evidence into fail-closed CI gates.
+
+`Playwright` `Accessibility` `Runtime diagnostics` `CI` `Evidence receipts`
+
+**Status:** internal engineering tooling
+
+</td>
+<td width="50%" valign="top">
+
+### Aether Audio Lab
+
+Native audio and synthesis research spanning three-dimensional reverb, modulation systems, advanced synthesizer architecture, realtime visualization, and instrument-grade control surfaces.
+
+`C++` `JUCE` `DSP` `Reverb` `Synthesis` `Realtime audio`
+
+**Status:** private DSP R&D
 
 </td>
 </tr>
@@ -206,9 +263,11 @@ Native audio-workstation and DSP research combining professional production work
 | Domain | Primary technologies |
 |---|---|
 | Native desktop | Rust, Tauri, C++, JUCE |
+| Mobile products | React Native, Expo, TypeScript, maps, notifications, role-aware state |
 | Product interface | TypeScript, React, CSS Modules, Canvas/Skia where justified |
 | Runtime services | Python, FastAPI, SSE, SQLite |
 | Model systems | Ollama, OpenAI-compatible gateways, local embeddings, retrieval |
+| Realtime and signal systems | Web Audio, DSP, RF telemetry, deterministic animation |
 | Infrastructure | Linux, Docker/OCI boundaries, Git worktrees, CI verification |
 | Engineering quality | Type safety, deterministic state, accessibility, performance receipts |
 
@@ -234,7 +293,8 @@ I work best on projects that require architectural depth rather than superficial
 - Secure execution environments
 - High-performance interaction systems
 - Recovery, evidence, and verification tooling
-- Audio, real-time graphics, and complex product interfaces
+- Mobility, dispatch, and role-aware mobile platforms
+- Audio, real-time graphics, RF telemetry, and complex product interfaces
 
 <p align="center">
   <strong>Build locally. Verify everything. Ship with evidence.</strong>
