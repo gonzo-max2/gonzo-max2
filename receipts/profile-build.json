@@ -192,6 +192,10 @@
       "sha256": "2413c168307a03400d5fa35f505367d4a3452ba21970ebb2dad4e841bad24684",
       "bytes": 648
     },
+    "gonzo-max2-PROFILE-OS-ULTRA-BLOCKCHAIN-VERIFICATION.md": {
+      "sha256": "37698ef0740c207d41e3f62f4ac119c28a77907378921b82bffca468dc999d5c",
+      "bytes": 1495
+    },
     "scripts/build_profile.py": {
       "sha256": "460ee80b4e0b51f180939ef38087733f9c6f1058a3bb982d493587a48da6a600",
       "bytes": 17927
