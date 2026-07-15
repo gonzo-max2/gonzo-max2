@@ -32,6 +32,14 @@ I lead a specialized team focused on high-performance digital ecosystems. Here i
 
 <br />
 
+### 🏆 Achievements
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=gonzo-max2&theme=radical&no-frame=true&no-bg=true&margin-w=15" alt="Gonzo's Trophies" />
+</div>
+
+<br />
+
 ### 🛠️ The Stack
 
 <div align="center">
@@ -52,4 +60,14 @@ I lead a specialized team focused on high-performance digital ecosystems. Here i
 <div align="center">
   <img height="160em" src="https://github-readme-stats.vercel.app/api?username=gonzo-max2&show_icons=true&theme=transparent&hide_border=true&title_color=white&text_color=8b949e&icon_color=58a6ff" />
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gonzo-max2&layout=compact&theme=transparent&hide_border=true&title_color=white&text_color=8b949e" />
+</div>
+
+<br />
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gonzo-max2/gonzo-max2/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gonzo-max2/gonzo-max2/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/gonzo-max2/gonzo-max2/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
