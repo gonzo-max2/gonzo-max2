@@ -1,28 +1,86 @@
-# GONZO Profile OS Architecture
+# GONZO // SYSTEMS — APEX Profile OS Architecture
 
-## Product boundary
+## Product definition
 
-The repository has two presentation surfaces sharing one source of truth:
+APEX is a two-surface public engineering identity system:
 
-1. `README.md` — GitHub-native, fast, accessible, self-contained, and safe.
-2. `docs/` — GitHub Pages experience with progressive enhancement and deeper animation.
+1. **GitHub-native profile README** — self-contained dark/light SVG presentation, concise technical narrative, public-safe project descriptions, real activity telemetry, and no third-party statistics renderer.
+2. **GitHub Pages Profile OS** — dependency-free interactive systems atlas with bounded motion, domain-specific runtime scenes, cryptographic proof demonstration, maturity disclosure, and case-study evidence.
 
-`content/profile.json` is canonical. `scripts/build_profile.py` generates README assets, synchronizes Pages data, and creates a machine-readable receipt.
+Both surfaces share `content/profile.json` as their canonical content authority.
+
+## Visual architecture
+
+The Pages surface deliberately avoids a generic card dashboard. It uses:
+
+- A full-viewport spatial systems core.
+- An asymmetric editorial systems atlas.
+- A six-phase MAYA proof continuum.
+- A deterministic Vozime trip lifecycle scene.
+- Native Canvas audio and RF visualizations.
+- A realtime motion-response scene for AURELIS.
+- An interactive SHA-256/Merkle proof fabric.
+- Evidence-first case studies and maturity disclosure.
 
 ## Motion architecture
 
-- CSS-only orbit and proof-continuum motion.
-- IntersectionObserver reveal transitions.
-- Canvas 2D constellation with adaptive point count, clamped DPR, requestAnimationFrame, and visibility suspension.
-- Pointer tilt limited to fine-pointer devices and throttled to one animation frame.
-- Complete `prefers-reduced-motion` shutdown.
+Motion is bounded and state-bearing:
 
-## Blockchain demonstrator
+- CSS orbit and signal transitions communicate runtime continuity.
+- `IntersectionObserver` reveals content once as it enters the viewport.
+- Canvas 2D ambient nodes use adaptive density, clamped device-pixel ratio, and `requestAnimationFrame`.
+- Audio and RF canvases reflect their respective domain models.
+- The browser pauses ambient work when the document is hidden.
+- Pointer depth is enabled only for fine-pointer devices.
+- `prefers-reduced-motion` disables nonessential movement.
+- A visible Motion/Still control allows operator override.
 
-The blockchain section is a local educational proof-chain. Five blocks represent intent, policy, action, proof, and receipt. Each digest is SHA-256 over block index, payload, and previous hash. The browser Web Crypto API performs hashing. Changing one payload produces a verifiable chain failure.
+No third-party JavaScript, animation library, analytics package, remote font, wallet SDK, or WebGL framework is loaded.
 
-No wallet, token, external chain, RPC endpoint, transaction signing, custody, or financial interaction exists.
+## Blockchain proof fabric
 
-## Security and performance
+The blockchain section is an explicitly labelled research and educational system:
 
-No third-party JavaScript, remote fonts, analytics, or tracking pixels are used. Canvas DPR is clamped to 1.75, node count is bounded, rendering pauses when hidden, and the service worker caches only first-party static assets.
+- Five receipts represent intent, policy, action, verification, and completion.
+- Each receipt commits to its sequence, payload, and previous digest.
+- SHA-256 uses the browser Web Crypto API with a deterministic pure-JavaScript fallback for non-secure local preview contexts.
+- Receipt hashes aggregate into a Merkle tree.
+- Injecting a mutation invalidates the dependent causal path.
+- Rebuilding receipts restores a valid proof root.
+
+The demonstration does not connect to a wallet, custody funds, sign transactions, call a blockchain RPC endpoint, issue a token, or claim a production decentralized network.
+
+## Accessibility
+
+- Semantic landmark structure and skip navigation.
+- Keyboard-accessible tabs, buttons, and anchors.
+- Visible focus indicators.
+- SVG `title` and `desc` metadata.
+- Dark and light themes.
+- Reduced-motion and forced-colors support.
+- No color-only maturity labels in textual surfaces.
+- No raw animation required to understand content.
+
+## Security
+
+- No credentials in repository content.
+- Secret-pattern gates cover GitHub, OpenAI-style, and fine-grained token formats.
+- GitHub Actions use repository-scoped `GITHUB_TOKEN`.
+- Deployment credentials are accepted only through a hidden prompt or process environment.
+- Public project descriptions are deliberately architecture-level and public-safe.
+- Research maturity is disclosed instead of implied as production readiness.
+
+## Build and proof pipeline
+
+```text
+content/profile.json
+        │
+        ├── scripts/build_apex_assets.py ──> assets/apex/*.svg
+        ├── scripts/build_profile.py ──────> docs/data/profile.json
+        │                                  receipts/profile-build.json
+        ├── scripts/validate_profile.py ──> README/SVG integrity
+        ├── scripts/verify_profile_os.py ─> security-and-structure receipt
+        └── scripts/ui_smoke_test.py ─────> interaction receipt
+```
+
+The smoke test verifies system switching, MAYA phase switching, Vozime trip-state switching, blockchain mutation detection, blockchain repair, and duplicate-ID absence.

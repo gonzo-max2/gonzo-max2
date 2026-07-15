@@ -1,0 +1,16 @@
+{
+  "schema": "gonzo-profile-apex-ui-smoke/v1",
+  "passed": true,
+  "checks": {
+    "atlas_tabs": 9,
+    "proof_tabs": 4,
+    "atlas_switch": "Vozime",
+    "phase_switch": "Act",
+    "trip_switch": "COMPLETE",
+    "ledger_tamper": "MUTATION DETECTED",
+    "ledger_repair": "PROOF FABRIC VALID",
+    "duplicate_ids": []
+  },
+  "errors": [],
+  "expected_pass": true
+}

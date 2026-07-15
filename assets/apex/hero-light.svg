@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc"><title id="title">GONZO systems profile</title><desc id="desc">Engineering systems that remain truthful under pressure.</desc>
+<style>
+  .spin{animation:spin 28s linear infinite;transform-origin:892px 260px}
+  .spin2{animation:spin 18s linear infinite reverse;transform-origin:892px 260px}
+  .pulse{animation:pulse 2.8s ease-in-out infinite}
+  .flow{stroke-dasharray:12 16;animation:flow 4s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+  @keyframes flow{to{stroke-dashoffset:-56}}
+  @media(prefers-reduced-motion:reduce){.spin,.spin2,.pulse,.flow{animation:none}}
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf1f3"/><stop offset=".55" stop-color="#ffffff"/><stop offset="1" stop-color="#edf1f3"/></linearGradient>
+  <radialGradient id="field" cx="75%" cy="48%" r="54%"><stop stop-color="#087c6b" stop-opacity=".16"/><stop offset="1" stop-color="#087c6b" stop-opacity="0"/></radialGradient>
+  <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#11181d"/><stop offset=".6" stop-color="#087c6b"/><stop offset="1" stop-color="#1769aa"/></linearGradient>
+</defs>
+<rect width="1200" height="520" rx="20" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="518" rx="19" fill="none" stroke="#c7d1d7"/>
+<rect width="1200" height="520" rx="20" fill="url(#field)"/>
+<g stroke="#c7d1d7" opacity=".42"><path d="M0 74H1200M0 446H1200"/><path d="M80 0V520M1120 0V520"/></g>
+<g transform="translate(80 48)"><rect width="44" height="44" rx="11" fill="#087c6b" fill-opacity=".09" stroke="#087c6b"/><path d="M13 26V18l9-6 9 6v8l-9 6-9-6Z" fill="none" stroke="#087c6b" stroke-width="2"/><path d="M22 12v20M13 18l18 8M31 18l-18 8" stroke="#087c6b" stroke-width="1.4" opacity=".7"/></g>
+<text x="145" y="76" fill="#687782" font-family="ui-monospace,Consolas,monospace" font-size="13" letter-spacing="3">GONZO // SYSTEMS</text>
+<text x="80" y="180" fill="#45545f" font-family="Inter,system-ui,sans-serif" font-size="48" font-weight="700" letter-spacing="-1.5">I build systems</text>
+<text x="80" y="240" fill="#11181d" font-family="Inter,system-ui,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">that remain truthful</text>
+<text x="80" y="308" fill="url(#titleGradient)" font-family="Inter,system-ui,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">under pressure.</text>
+<text x="82" y="357" fill="#687782" font-family="Inter,system-ui,sans-serif" font-size="16">Autonomous AI · Mobility · Blockchain · Native DSP · RF sensing · Proof architecture</text>
+<g transform="translate(82 397)" font-family="ui-monospace,Consolas,monospace" font-size="10"><circle class="pulse" cx="6" cy="7" r="5" fill="#087c6b"/><text x="22" y="11" fill="#11181d">ACTIVE DEVELOPMENT</text><text x="190" y="11" fill="#687782">MAYA 6.6.1</text><text x="300" y="11" fill="#687782">09 SYSTEMS</text><text x="404" y="11" fill="#687782">PROFILE OS / APEX</text></g>
+<g>
+  <circle cx="892" cy="260" r="184" fill="none" stroke="#087c6b" stroke-opacity=".28"/>
+  <circle class="spin" cx="892" cy="260" r="138" fill="none" stroke="#087c6b" stroke-opacity=".28" stroke-dasharray="4 9"/>
+  <circle class="spin2" cx="892" cy="260" r="92" fill="none" stroke="#1769aa" stroke-opacity=".32" stroke-dasharray="2 8"/>
+  <rect x="837" y="205" width="110" height="110" rx="27" fill="#ffffff" stroke="#087c6b"/>
+  <text x="892" y="278" text-anchor="middle" fill="#087c6b" font-family="Inter,system-ui,sans-serif" font-size="50" font-weight="780">G</text>
+  <g fill="#ffffff" stroke="#c7d1d7"><rect x="695" y="130" width="84" height="34" rx="17"/><rect x="996" y="153" width="94" height="34" rx="17"/><rect x="1024" y="342" width="86" height="34" rx="17"/><rect x="724" y="370" width="80" height="34" rx="17"/><rect x="664" y="258" width="68" height="34" rx="17"/></g>
+  <g fill="#687782" font-family="ui-monospace,Consolas,monospace" font-size="9" text-anchor="middle"><text x="737" y="151">MAYA</text><text x="1043" y="174">VOZIME</text><text x="1067" y="363">CHAIN</text><text x="764" y="391">DSP</text><text x="698" y="279">RF</text></g>
+  <g fill="#087c6b"><circle cx="892" cy="76" r="5"/><circle cx="1032" cy="154" r="5"/><circle cx="1038" cy="348" r="5"/><circle cx="800" cy="416" r="5"/><circle cx="708" cy="250" r="5"/></g>
+</g>
+<path class="flow" d="M80 466H1120" stroke="#087c6b" stroke-opacity=".55" stroke-width="2"/>
+<text x="80" y="495" fill="#94a0a8" font-family="ui-monospace,Consolas,monospace" font-size="9" letter-spacing="1.4">INSTRUCTION → COGNITION → ACTION → ARTIFACT → VERIFICATION → RECEIPT</text>
+</svg>

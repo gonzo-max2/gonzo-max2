@@ -1,180 +1,221 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/hero-light.svg">
-  <img alt="GONZO // SYSTEMS — Engineering systems that prove what they actually did." src="./assets/generated/hero-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/hero-light.svg">
+  <img alt="GONZO // SYSTEMS — engineering systems that remain truthful under pressure" src="./assets/apex/hero-dark.svg" width="100%">
 </picture>
 
-<p align="center"><strong>Autonomous AI · Mobility · Blockchain · Native DSP · RF research · Realtime product architecture</strong></p>
-<p align="center"><a href="#maya-codex-nexus">MAYA</a> · <a href="#systems-portfolio">Systems</a> · <a href="#blockchain-systems-lab">Blockchain</a> · <a href="#engineering-activity">Activity</a> · <a href="https://gonzo-max2.github.io/gonzo-max2/">Interactive Profile OS</a></p>
+<p align="center">
+  <strong>Autonomous AI · Mobility · Blockchain · Native DSP · RF sensing · Proof architecture</strong>
+</p>
+
+<p align="center">
+  <a href="#maya-codex-nexus">MAYA</a>
+  &nbsp;·&nbsp;
+  <a href="#vozime">Vozime</a>
+  &nbsp;·&nbsp;
+  <a href="#systems-atlas">Systems Atlas</a>
+  &nbsp;·&nbsp;
+  <a href="#blockchain-proof-fabric">Blockchain</a>
+  &nbsp;·&nbsp;
+  <a href="https://gonzo-max2.github.io/gonzo-max2/">Enter Profile OS</a>
+</p>
+
 <img src="./assets/continuum-divider.svg" alt="" width="100%">
 
 ## Operating profile
 
-I design systems where **reasoning, execution, verification, and evidence remain one continuous object**.
+I design systems where **intent, execution, artifacts, verification, and evidence remain one continuous object**.
 
-Building proof-native autonomous systems, local-first AI infrastructure, mobility platforms, blockchain architecture, and instrument-grade products.
-
-<table><tr><td width="50%" valign="top">
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### Current mission
 
 **MAYA Codex Nexus 6.6.1**
 
-Rust control plane, verified autonomous execution, and model orchestration.
+Rust control-plane migration, verified autonomous execution, model orchestration, and proof-native desktop interaction.
 
-</td><td width="50%" valign="top">
+</td>
+<td width="50%" valign="top">
 
-### Delivery standard
+### Engineering invariants
 
 - Runtime truth over simulated completion
 - Typed contracts over implicit coupling
 - Receipts over unsupported claims
 - Graceful degradation over blank screens
 - Measured performance over decorative motion
-- Complete systems over disconnected prototypes
+- Research labelled honestly
 
-</td></tr></table>
+</td>
+</tr>
+</table>
 
 ## MAYA Codex Nexus
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/maya-system-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/maya-system-light.svg"><img alt="MAYA Codex Nexus proof-native execution architecture" src="./assets/maya-system-dark.svg" width="100%"></picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/maya-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/maya-light.svg">
+  <img alt="MAYA Codex Nexus proof continuum" src="./assets/apex/maya-dark.svg" width="100%">
+</picture>
 
-**MAYA Codex Nexus** is a local-first autonomous engineering workstation built around:
+**MAYA** is a local-first autonomous engineering workstation built around a proof continuum:
 
-> Instruction → Observe → Frame → Decide → Act → Verify → Learn → Receipt
+> Instruction → Observe → Frame → Decide → Act → Verify → Receipt
 
-Its core invariant is simple: **a completion claim is not complete until its evidence is inspectable**.
+The system binds workspace truth, tool execution, transactional edits, runtime failures, verification output, and final receipts into one inspectable causal chain.
 
-## Systems portfolio
+<table>
+<tr>
+<td width="33%" valign="top">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/systems-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/generated/systems-light.svg"><img alt="Nine-system engineering portfolio" src="./assets/generated/systems-dark.svg" width="100%"></picture>
+### Runtime
 
-<table><tr>
-<td width="50%" valign="top">
-
-### MAYA Codex Nexus
-
-Local-first autonomous engineering workstation with proof-native execution, specialist agents, transactional workspaces, model routing, and runtime receipts.
-
-`Rust` `Tauri` `Python` `FastAPI` `React` `TypeScript` `SQLite` `Ollama`
-
-**Status:** private active development
+Tauri desktop shell, Rust-native bridge, authenticated Python sidecar, SSE event transport, worktree isolation, persistent receipts, and deterministic recovery.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### Vozime
+### Intelligence
 
-Rider-and-driver mobile platform with role-aware navigation, trip lifecycle state, maps, realtime feedback, trusted notifications, and a premium mobile design system.
+Local and remote model gateways, specialist agents, project memory, retrieval, safe cognition projection, and evidence-aware routing.
+
+</td>
+<td width="33%" valign="top">
+
+### Interface
+
+Mission timeline, Cognition Ribbon, Continuum Spine, contextual surfaces, autonomous tab routing, exact origin restoration, and graceful degradation.
+
+</td>
+</tr>
+</table>
+
+## Vozime
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/vozime-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/vozime-light.svg">
+  <img alt="Vozime deterministic mobility lifecycle" src="./assets/apex/vozime-dark.svg" width="100%">
+</picture>
+
+**Vozime** is a rider-and-driver mobility platform where request, matching, arrival, trip, payment, notification, and safety state advance through one deterministic lifecycle.
 
 `React Native` `Expo` `TypeScript` `Maps` `Realtime state` `Mobile UX`
 
-**Status:** private active development
+## Systems Atlas
 
-</td>
-</tr><tr>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/systems-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/systems-light.svg">
+  <img alt="Nine-system engineering atlas" src="./assets/apex/systems-dark.svg" width="100%">
+</picture>
+
+<table>
+<tr>
 <td width="50%" valign="top">
 
 ### AURELIS
 
-Deterministic realtime presentation engine with velocity-driven motion, synchronized audio and haptics, pooled effects, responsive interaction, and runtime performance gates.
+Deterministic realtime presentation architecture with velocity-driven motion, synchronized audio and haptics, pooled effects, and measured frame performance.
 
-`TypeScript` `React` `Canvas` `Web Audio` `Realtime systems`
-
-**Status:** private product development
+`TypeScript` `React` `Canvas` `Web Audio`
 
 </td>
 <td width="50%" valign="top">
 
 ### DERAMA Studio
 
-Professional audio-workstation architecture spanning playlist, channel rack, piano roll, mixer, automation, synthesis, sampling, editing, and native JUCE DSP.
+Native audio-workstation architecture spanning playlist, channel rack, piano roll, mixer, automation, synthesis, sampling, and JUCE DSP.
 
-`C++` `JUCE` `DSP` `Audio architecture` `Desktop UI`
-
-**Status:** private R&D
+`C++` `JUCE` `DSP` `Desktop audio`
 
 </td>
-</tr><tr>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### AETHER RF Sense
 
-Real-input-only Wi-Fi telemetry research exploring movement inference, resilient acquisition, operator-visible calibration, confidence, and realtime signal visualization.
+Real-input-only Wi-Fi telemetry research with movement inference, resilient acquisition, calibration, confidence projection, and realtime signal visualization.
 
-`Python` `Signal processing` `Wi-Fi telemetry` `Realtime visualization`
-
-**Status:** experimental research prototype
+`Python` `Signal processing` `RF telemetry`
 
 </td>
 <td width="50%" valign="top">
 
-### CredTrace Local Recovery Console
+### CredTrace
 
-Bounded local recovery console with recursive scanning, browser-profile intelligence, archive inspection, resumable execution, redacted findings, and persistent evidence.
+Bounded local recovery and forensic analysis with persistent evidence, resumable execution, archive inspection, and redacted exports.
 
-`Python` `SQLite` `Forensics` `Recovery tooling` `Local-first`
-
-**Status:** private research system
+`Python` `SQLite` `Forensics` `Local-first`
 
 </td>
-</tr><tr>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### UI_DEBUG_MCP_PRO
 
-Fail-closed UI quality automation for browser exceptions, authentication failures, accessibility audits, runtime diagnostics, visual evidence, and CI receipts.
+Fail-closed UI quality automation for runtime exceptions, authentication failures, accessibility audits, network diagnostics, and machine-readable CI receipts.
 
-`Playwright` `Accessibility` `Runtime diagnostics` `CI` `Evidence receipts`
-
-**Status:** internal engineering tooling
+`Playwright` `Accessibility` `CI` `Runtime diagnostics`
 
 </td>
 <td width="50%" valign="top">
 
 ### Aether Audio Lab
 
-Native audio research spanning three-dimensional reverb, modulation, advanced synthesis, realtime visualization, and instrument-grade control surfaces.
+Native DSP and synthesis research spanning spatial reverb, modulation, advanced synthesis, realtime visualization, and instrument-grade controls.
 
-`C++` `JUCE` `DSP` `Reverb` `Synthesis` `Realtime audio`
-
-**Status:** private DSP R&D
+`C++` `JUCE` `DSP` `Synthesis`
 
 </td>
-</tr><tr>
-<td width="50%" valign="top">
+</tr>
+</table>
 
-### Blockchain Systems Lab
+## Blockchain Proof Fabric
 
-Research track for cryptographic receipts, smart-contract safety, verifiable automation, event-sourced ledgers, zero-knowledge architecture, and disciplined on-chain/off-chain boundaries.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/ledger-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/ledger-light.svg">
+  <img alt="Blockchain cryptographic receipt and Merkle proof architecture" src="./assets/apex/ledger-dark.svg" width="100%">
+</picture>
 
-`Cryptography` `Smart contracts` `Event sourcing` `ZK research` `Rust`
+The blockchain track is an explicitly labelled **research direction** focused on:
 
-**Status:** research direction
+- SHA-256 execution receipts
+- Chained event integrity
+- Merkle proof aggregation
+- Smart-contract safety boundaries
+- Verifiable autonomous actions
+- Zero-knowledge architecture
+- Honest separation of on-chain and off-chain authority
 
-</td>
-<td width="50%"></td>
-</tr></table>
-
-## Blockchain Systems Lab
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/blockchain-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/generated/blockchain-light.svg"><img alt="Blockchain proof-chain architecture" src="./assets/generated/blockchain-dark.svg" width="100%"></picture>
-
-The blockchain track is explicitly a **research direction**, focused on cryptographic execution receipts, event-sourced ledger integrity, smart-contract safety, verifiable autonomous actions, zero-knowledge proof architecture, and honest on-chain/off-chain boundaries.
-
-The interactive Pages experience includes a local SHA-256 proof-chain demonstrator that detects tampering without a wallet, extension, or external blockchain service.
+The interactive Profile OS includes a browser-native tamper demonstration with no wallet, token, RPC endpoint, transaction signing, or financial interaction.
 
 ## Capability maturity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/capabilities-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/generated/capabilities-light.svg"><img alt="Engineering capability maturity matrix" src="./assets/generated/capabilities-dark.svg" width="100%"></picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/capabilities-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/capabilities-light.svg">
+  <img alt="Engineering capability maturity matrix" src="./assets/apex/capabilities-dark.svg" width="100%">
+</picture>
 
 ## Engineering activity
 
-The panel below is generated from GitHub's API by this repository's own workflow.
+The activity panel is generated by this repository's own GitHub Actions workflow using GitHub's API. It does not depend on a third-party profile-stat renderer.
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg"><img alt="Verified GitHub engineering activity" src="./assets/activity-dark.svg" width="100%"></picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
+  <img alt="Verified GitHub engineering activity" src="./assets/activity-dark.svg" width="100%">
+</picture>
 
 ## Collaboration model
+
+I work best on systems requiring architectural depth:
 
 - Autonomous developer tooling
 - Secure local AI infrastructure
@@ -185,4 +226,6 @@ The panel below is generated from GitHub's API by this repository's own workflow
 - Recovery, evidence, and verification tooling
 - High-performance, accessibility-complete interaction systems
 
-<p align="center"><strong>Build locally. Verify everything. Ship with evidence.</strong></p>
+<p align="center">
+  <strong>Build locally. Verify everything. Ship with evidence.</strong>
+</p>

@@ -1,9 +1,10 @@
 {
-  "name": "GONZO // SYSTEMS Profile OS",
-  "short_name": "GONZO",
+  "name": "GONZO // SYSTEMS — APEX Profile OS",
+  "short_name": "GONZO APEX",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#070a0e",
-  "theme_color": "#070a0e",
-  "description": "Proof-native autonomous engineering, mobility, blockchain, DSP, RF research, and realtime product architecture."
+  "background_color": "#05080b",
+  "theme_color": "#05080b",
+  "description": "A public command interface for an engineering ecosystem."
 }

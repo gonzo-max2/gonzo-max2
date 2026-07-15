@@ -1,32 +1,37 @@
 {
-  "schema": "gonzo-profile-os-manifest/v1",
-  "generated_at": "2026-07-15",
+  "schema": "gonzo-profile-os-apex-manifest/v1",
+  "release": "APEX Another World 2026-07-15",
   "systems": 9,
-  "case_studies": 4,
-  "features": [
-    "compiled README",
-    "dual-theme animated SVG",
-    "GitHub Pages Profile OS",
-    "adaptive Canvas constellation",
-    "scroll-reveal motion",
-    "pointer tilt",
-    "interactive SHA-256 proof chain",
-    "blockchain research presentation",
-    "reduced-motion support",
-    "forced-colors support",
-    "offline service worker",
-    "self-verifying CI",
-    "secure deployment scripts"
-  ],
-  "contains_credentials": false,
+  "github_native_svg_variants": 12,
+  "pages_runtime": {
+    "external_javascript_dependencies": 0,
+    "external_font_dependencies": 0,
+    "canvas_scenes": 3,
+    "interactive_systems": 9,
+    "proof_cases": 4,
+    "blockchain_demo": "SHA-256 chained receipts + Merkle aggregation"
+  },
+  "security": {
+    "contains_credentials": false,
+    "secret_pattern_gate": true,
+    "wallet_or_rpc_dependency": false
+  },
+  "verification": {
+    "static_structure": "passed",
+    "javascript_syntax": "passed",
+    "python_compilation": "passed",
+    "bash_syntax": "passed",
+    "browser_interaction_smoke": "passed",
+    "visual_proof_screenshots": 5
+  },
   "files": {
     ".github/workflows/build-profile-os.yml": {
-      "sha256": "3fbe215b3f8e3692d62d55c62dc4af64a030201edee170b9c1f34526fdc012b4",
-      "bytes": 1016
+      "sha256": "df058f7dfd48fef10a45e853c3b58c0924fd0dfaaa5629d58a627e768c39b421",
+      "bytes": 2087
     },
     ".github/workflows/deploy-pages.yml": {
-      "sha256": "37cd27df69a3d0b77cc554c9496c6d059d4d0543d6073c5f3d426a651d97b075",
-      "bytes": 889
+      "sha256": "77536be64faed8baf2e2d92b3f066477a9839a214ada6707b2d99c4234dc58ba",
+      "bytes": 1251
     },
     ".github/workflows/profile-metrics.yml": {
       "sha256": "3fef181f9326f69f2419314599ccff872a8af49e2b3f5ea631eabde3d774105f",
@@ -37,24 +42,24 @@
       "bytes": 472
     },
     "DEPLOYMENT.md": {
-      "sha256": "ca60d75dc6c6d150cfa3a3a64db601b6ae971060b3a509032020bf3a018358de",
-      "bytes": 554
+      "sha256": "ba2bdafd3793e8763c745a7bf0c4087fdf118eb697af48c6fbc761a53429e216",
+      "bytes": 1533
     },
     "LICENSE": {
       "sha256": "a6b14dbcc2ebbf3dedcd3abf18b48ef99d0ea36f1444c37d5c5794dd96dda292",
       "bytes": 1070
     },
     "PROFILE_OS_ARCHITECTURE.md": {
-      "sha256": "bd95ab6b110c03ac09c1c2ef7db60d4d9d20d0bac0ecd962f18498851c4c14f3",
-      "bytes": 1507
+      "sha256": "8f187f701d7beb176ae62ab54075631b526fa26c7dacb8bc9206c8f49e89a373",
+      "bytes": 4067
     },
     "PROFILE_SETUP.md": {
       "sha256": "cbadef2ebb88aad06339ad4f0244851bab5e2be4103ac95df528a8ba474a5221",
       "bytes": 4001
     },
     "README.md": {
-      "sha256": "cf70d8a53262ee0d219e4b37e2eea9b696420cc1d09a55ae7012ee1340ad961b",
-      "bytes": 7590
+      "sha256": "ae08693e8ec99ea6e23fdfea03af6418a16fb04293de998ab6ef387ef1ec9125",
+      "bytes": 7405
     },
     "SECURITY.md": {
       "sha256": "b476ecb296a3b155655f64a389cc88710299ceb3c62165dd345973badc61b46c",
@@ -67,6 +72,54 @@
     "assets/activity-light.svg": {
       "sha256": "b7503a4985511ea2a82e770d57fe1272dfe11a3ee2a9b7c09f6dfe00fa21208a",
       "bytes": 34210
+    },
+    "assets/apex/capabilities-dark.svg": {
+      "sha256": "342db2156c6c830934c5565e384f1a52c954b03aa72b57cea2e5b40228c179cf",
+      "bytes": 4443
+    },
+    "assets/apex/capabilities-light.svg": {
+      "sha256": "bfa902a97d92d410de551bf8b742067fac536d4148dbb3b0c857f6419135a733",
+      "bytes": 4443
+    },
+    "assets/apex/hero-dark.svg": {
+      "sha256": "4051acfbeba35a457e82eba90935423af58171855830c19764a150cdd8415140",
+      "bytes": 4798
+    },
+    "assets/apex/hero-light.svg": {
+      "sha256": "98eec497dd25bd739a5c5ca50fc1f276b6e8325bb65e13794873359c5159d707",
+      "bytes": 4798
+    },
+    "assets/apex/ledger-dark.svg": {
+      "sha256": "e63d05be6470a96e4c08099618ebc6225724d2c9a4dbae462cd417a69a1fc07f",
+      "bytes": 5351
+    },
+    "assets/apex/ledger-light.svg": {
+      "sha256": "1f29d1a4c36268726feac9c0a8c44254c3fb099088ef2946658c104405a0f302",
+      "bytes": 5351
+    },
+    "assets/apex/maya-dark.svg": {
+      "sha256": "e2aadccb1a893324e9f7d5cb17e64a5c2b15ac1dcc75b9bab260fd00d23e55bc",
+      "bytes": 5052
+    },
+    "assets/apex/maya-light.svg": {
+      "sha256": "3967b040b0951e57fd738d7178609d665353ea935ef33688876b2dde3a007015",
+      "bytes": 5052
+    },
+    "assets/apex/systems-dark.svg": {
+      "sha256": "b895b05047646595f320585d7a5d7335000f2199cc1e86de58ef248a51d8a0e2",
+      "bytes": 5542
+    },
+    "assets/apex/systems-light.svg": {
+      "sha256": "f820476783c274b194050f8e7335209a13491149fa66fb13be393b083faa5406",
+      "bytes": 5542
+    },
+    "assets/apex/vozime-dark.svg": {
+      "sha256": "6ceb514c20aaf96804896608c752d4051d5a3d4037d60b382e3bb74514c050d4",
+      "bytes": 3442
+    },
+    "assets/apex/vozime-light.svg": {
+      "sha256": "29ee67420b810b9d5e394516c7717f4e5c210d5fe47a8f61640cb29d85c4e29c",
+      "bytes": 3442
     },
     "assets/continuum-divider.svg": {
       "sha256": "ed9ce04df49a106e99f2d60ede1041ab4b48ca881acbbb96aab2769a0b561040",
@@ -129,8 +182,8 @@
       "bytes": 110
     },
     "docs/app.js": {
-      "sha256": "4841c20b3be7414e37510069398dbe8cd56b7f03b3688d87d9b24b5d33a6e67a",
-      "bytes": 8882
+      "sha256": "02cbfdee651f7b9636c75d34fac0fcaa6b0027aa9ee182e95ee6ce90c878c878",
+      "bytes": 35696
     },
     "docs/assets/activity-dark.svg": {
       "sha256": "1bb67090cbb37eb0e00dc00592304fe6aafe22906fb0918e74406238a9620785",
@@ -139,6 +192,10 @@
     "docs/assets/activity-light.svg": {
       "sha256": "b7503a4985511ea2a82e770d57fe1272dfe11a3ee2a9b7c09f6dfe00fa21208a",
       "bytes": 34210
+    },
+    "docs/assets/apex-social.svg": {
+      "sha256": "c2dffb07990fc9f0c2b90d1acbae5a0cdafb7c1c82718ccdc6b4428276dc2b9c",
+      "bytes": 2924
     },
     "docs/assets/blockchain-dark.svg": {
       "sha256": "5b244429c5dff419915c6559bc24e89239e5770bf089d323ff397a31094713e2",
@@ -185,36 +242,68 @@
       "bytes": 9888
     },
     "docs/data/profile.json": {
-      "sha256": "58d28242f8fcc639cacb4de865380406d8a4fbc9a23e7e2f3b71437becae1e2b",
-      "bytes": 7410
+      "sha256": "2622f2402e763b1b9615b927332da559daee01ed5a4e24bd54bd5c82ebe849c4",
+      "bytes": 9626
     },
     "docs/index.html": {
-      "sha256": "d921aff89a024c9c5fb3c4bc93e8a23c1ad58979667cde126457fd2c8bf92093",
-      "bytes": 7758
+      "sha256": "d093293be17f2fe271dc1c330a501e3eb3738a20ebfe2d4294c4c333e0ba946e",
+      "bytes": 17932
     },
     "docs/site.webmanifest": {
-      "sha256": "e20b8d9ca5a9cc9cf1f5aa7eec4fc6e791064b667665da9bb587a6193680a1c9",
-      "bytes": 310
+      "sha256": "59e786c7f08f0a177c70da342c0d9d6e4a9c19b28997cebb79a2dccb6ad1a2c0",
+      "bytes": 286
     },
     "docs/styles.css": {
-      "sha256": "ebea540d7d4cab300e81b056f3c956db0558988c126ec74dee25b53160af74d8",
-      "bytes": 18139
+      "sha256": "be0dd4ea008ddf17047fc92fbb329525e707f8d9c3787f07488b4ec7264c5a35",
+      "bytes": 46817
     },
     "docs/sw.js": {
       "sha256": "2413c168307a03400d5fa35f505367d4a3452ba21970ebb2dad4e841bad24684",
       "bytes": 648
     },
     "receipts/profile-build.json": {
-      "sha256": "db69c6ec8bc98d6058407275abf4d4377a1b8d77ead2188b546a5ae19db7e78b",
-      "bytes": 7924
+      "sha256": "cabbb2d1637f212f466cffa85ec4f30649d8a58712065ef510c9d3d7d64cbddb",
+      "bytes": 10389
     },
     "receipts/security-and-structure.json": {
-      "sha256": "e946213bed36a936ffc8c54baf8a6c5b2b2713417694b647d34ebfe142f5a44b",
-      "bytes": 1957
+      "sha256": "21e43ff0f58a47928c87aec960f19fb3b524dc33eb39de290d0111a8f3631679",
+      "bytes": 2594
+    },
+    "receipts/ui-smoke.json": {
+      "sha256": "add243e388d4e284946259a5315bf2e428ddaaacd6e9710a93dd5c982d5ba710",
+      "bytes": 366
+    },
+    "receipts/visual-proof/README.md": {
+      "sha256": "fc2bc12c224fb7eac7a0bda0fc8e5df0f0cc2066ee43b0bc0a175cf717433977",
+      "bytes": 655
+    },
+    "receipts/visual-proof/atlas-1440x1000.png": {
+      "sha256": "8f88e62c8f719db6d8a455b163bf995ee306028c40cc5357d1cafdc6f2baaa84",
+      "bytes": 352637
+    },
+    "receipts/visual-proof/hero-1440x1000.png": {
+      "sha256": "3d031c59a0c0ca77bc41798520c672a14632a16ff03ee4fb1adf14e3c83a56b5",
+      "bytes": 541086
+    },
+    "receipts/visual-proof/ledger-1440x1000.png": {
+      "sha256": "7351442c7626cca103ee6d98ccb27e4c4943088fcca01938d14f0e4359fbd4e9",
+      "bytes": 369979
+    },
+    "receipts/visual-proof/maya-1440x1000.png": {
+      "sha256": "cc1da7c998787a09a65e8a1a5071494c14f1e853da1711e9d466f66e930b4c6c",
+      "bytes": 429513
+    },
+    "receipts/visual-proof/vozime-1440x1000.png": {
+      "sha256": "683400362e74bb5f5646334863e4263f693bea12d295dba1dc9fb61b9802488b",
+      "bytes": 340205
+    },
+    "scripts/build_apex_assets.py": {
+      "sha256": "84da62c1c6c8ba7a8ce02c31e6299becbb26ecb3a2d3de1b97e45bdc04011c04",
+      "bytes": 19413
     },
     "scripts/build_profile.py": {
-      "sha256": "460ee80b4e0b51f180939ef38087733f9c6f1058a3bb982d493587a48da6a600",
-      "bytes": 17927
+      "sha256": "84fd922088896786b6655be9e10b3f7be06e966304bcfba6825613129ae22d8a",
+      "bytes": 1705
     },
     "scripts/deploy_profile_secure.sh": {
       "sha256": "7f2325e757a73cea37ffea9260715e892a779401391855a54dc7c8869e922e91",
@@ -224,13 +313,17 @@
       "sha256": "16dd6bc3617869015b96dddf6c5303118e9b287fd12401d3c26ba6121d2741fe",
       "bytes": 8650
     },
+    "scripts/ui_smoke_test.py": {
+      "sha256": "4f197e49fe39de8e7d1949926b1ce8aa12991a63e59d7abcb28ac121dfcf3214",
+      "bytes": 2721
+    },
     "scripts/validate_profile.py": {
-      "sha256": "fdb44369e7b5a65df846988c470d43765b6bc3b296589f133b3b88ea2051f741",
-      "bytes": 2259
+      "sha256": "b3100aec54843499559d458069764606a64e819bba6b0b763119354a38690687",
+      "bytes": 2744
     },
     "scripts/verify_profile_os.py": {
-      "sha256": "0715df5439354736e6e53c4d2bf006b30a68f2954caad53be3a9da4b049d6e40",
-      "bytes": 3111
+      "sha256": "ce56e2c3a14fd17cf5ac9182bcbe5622012f82c60d8f2771072dc8629721ea2d",
+      "bytes": 5208
     },
     "scripts/verify_profile_remote.sh": {
       "sha256": "1988e9fad9072a0479e23fcae6bd9f697fa43d1c927571d8ad99dbd2b085b41d",

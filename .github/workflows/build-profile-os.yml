@@ -1,27 +1,78 @@
-name: Build Profile OS
+name: Build APEX Profile OS
+
 on:
   workflow_dispatch:
   pull_request:
   push:
     branches: [main]
-    paths: ["content/**", "scripts/**", "docs/**", "README.md", "assets/**"]
+    paths:
+      - "content/**"
+      - "scripts/**"
+      - "docs/**"
+      - "README.md"
+      - "assets/**"
+      - ".github/workflows/build-profile-os.yml"
+
 permissions:
   contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+        with:
+          python-version: "3.12"
+
       - uses: actions/setup-node@v4
-        with: { node-version: "22" }
-      - run: python3 scripts/build_profile.py
-      - run: git diff --exit-code -- README.md assets/generated docs/data receipts/profile-build.json
-      - run: python3 scripts/validate_profile.py && python3 scripts/verify_profile_os.py && node --check docs/app.js
-      - name: Secret-pattern gate
+        with:
+          node-version: "22"
+
+      - name: Build deterministic APEX assets
+        run: python3 scripts/build_profile.py
+
+      - name: Reject uncommitted generated drift
+        run: git diff --exit-code -- assets/apex docs/data/profile.json receipts/profile-build.json
+
+      - name: Validate GitHub profile and Pages runtime
         run: |
-          if grep -RInE --exclude-dir=.git '(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{20,})' .; then exit 1; fi
-      - uses: actions/upload-artifact@v4
-        with: { name: profile-os-receipts, path: receipts/ }
+          python3 scripts/validate_profile.py
+          python3 scripts/verify_profile_os.py
+          node --check docs/app.js
+
+      - name: Secret-pattern gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE --exclude-dir=.git --exclude='*.png' --exclude='*.zip' \
+            '(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{20,})' .; then
+            echo "Credential-shaped secret detected."
+            exit 1
+          fi
+
+      - name: Static size budgets
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(wc -c < docs/app.js)" -le 85000
+          test "$(wc -c < docs/styles.css)" -le 110000
+          test "$(wc -c < README.md)" -le 60000
+
+
+      - name: Install browser audit runtime
+        run: |
+          python3 -m pip install --disable-pip-version-check playwright==1.57.0
+          python3 -m playwright install --with-deps chromium
+
+      - name: Run offline interaction smoke test
+        run: python3 scripts/ui_smoke_test.py
+
+      - name: Upload verification receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: apex-profile-os-receipts
+          path: receipts/
