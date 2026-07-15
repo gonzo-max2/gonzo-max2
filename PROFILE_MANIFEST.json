@@ -1,0 +1,62 @@
+{
+  "schema": "gonzo-profile-manifest/v1",
+  "profile": "gonzo-max2",
+  "files": {
+    ".github/workflows/profile-metrics.yml": {
+      "sha256": "3fef181f9326f69f2419314599ccff872a8af49e2b3f5ea631eabde3d774105f",
+      "bytes": 1482
+    },
+    ".github/workflows/validate-profile.yml": {
+      "sha256": "494b1d48c87bab961b88727936e4d68cdd37bea64c198a059d1502b8a8352be9",
+      "bytes": 472
+    },
+    "PROFILE_SETUP.md": {
+      "sha256": "692ace799988d01dc0e12dfeaa1d39bd3a0ecef5565b4b5d84df9cfed5863821",
+      "bytes": 2336
+    },
+    "README.md": {
+      "sha256": "abdd5441261383be3a1536ee33908bf3740cd72f0bb3c8674a571b208a19807b",
+      "bytes": 7607
+    },
+    "SECURITY.md": {
+      "sha256": "b476ecb296a3b155655f64a389cc88710299ceb3c62165dd345973badc61b46c",
+      "bytes": 632
+    },
+    "assets/activity-dark.svg": {
+      "sha256": "1bb67090cbb37eb0e00dc00592304fe6aafe22906fb0918e74406238a9620785",
+      "bytes": 34210
+    },
+    "assets/activity-light.svg": {
+      "sha256": "b7503a4985511ea2a82e770d57fe1272dfe11a3ee2a9b7c09f6dfe00fa21208a",
+      "bytes": 34210
+    },
+    "assets/continuum-divider.svg": {
+      "sha256": "177905ce11243fb471e9965da13d505739d8d0938205df6311775a7c60b0734b",
+      "bytes": 613
+    },
+    "assets/hero-dark.svg": {
+      "sha256": "0a4f5d6767b1c34dbe39c319ead2aba202dca5197b39dea2eb758cd00b5aa9ab",
+      "bytes": 3014
+    },
+    "assets/hero-light.svg": {
+      "sha256": "2a6ea6ed95051c44959b36889401a6616e9667924bc9556bb2a3c4107a22fa76",
+      "bytes": 3014
+    },
+    "assets/maya-system-dark.svg": {
+      "sha256": "ad363d01b716f76c9ce5d03a64ba4fc8d88c98d4330fc805d18d645bd7a271a5",
+      "bytes": 5082
+    },
+    "assets/maya-system-light.svg": {
+      "sha256": "2fbd7296d4f68e067867a795c3c4fdf79b1d0ac4ec9e4ae4f60dae521d7c0ba4",
+      "bytes": 5082
+    },
+    "scripts/generate_activity.py": {
+      "sha256": "16dd6bc3617869015b96dddf6c5303118e9b287fd12401d3c26ba6121d2741fe",
+      "bytes": 8650
+    },
+    "scripts/validate_profile.py": {
+      "sha256": "ca738e3fcb868f1bb3c13461bb7402bd781716ec2ecebac1c9bb1b7ea17ab099",
+      "bytes": 1884
+    }
+  }
+}

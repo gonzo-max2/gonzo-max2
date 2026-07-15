@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">MAYA Codex Nexus architecture</title>
+  <desc id="desc">Instruction flows through cognition, isolated action, verification, and receipt.</desc>
+  <defs>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#087C6B" stop-opacity="0.25"/>
+      <stop offset="0.5" stop-color="#087C6B"/>
+      <stop offset="1" stop-color="#087C6B" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="430" rx="16" fill="#FFFFFF"/>
+  <rect x="1" y="1" width="1198" height="428" rx="15" fill="none" stroke="#C9D3DC"/>
+
+  <text x="56" y="60" fill="#607080" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="2">FLAGSHIP SYSTEM</text>
+  <text x="56" y="103" fill="#141A22" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="32" font-weight="700">MAYA Codex Nexus</text>
+  <text x="56" y="136" fill="#607080" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">Proof-native autonomous engineering workstation</text>
+
+  <g transform="translate(56 188)">
+    <path d="M76 46H1060" stroke="url(#accentLine)" stroke-width="2"/>
+    <g font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+      <g transform="translate(0 0)">
+        <rect width="148" height="92" rx="10" fill="#F0F4F7" stroke="#C9D3DC"/>
+        <text x="18" y="31" fill="#607080" font-size="11" letter-spacing="1.3">01</text>
+        <text x="18" y="58" fill="#141A22" font-size="16" font-weight="650">Instruction</text>
+        <text x="18" y="78" fill="#607080" font-size="12">Operator intent</text>
+      </g>
+      <g transform="translate(170 0)">
+        <rect width="148" height="92" rx="10" fill="#F0F4F7" stroke="#C9D3DC"/>
+        <text x="18" y="31" fill="#607080" font-size="11" letter-spacing="1.3">02</text>
+        <text x="18" y="58" fill="#141A22" font-size="16" font-weight="650">Cognition</text>
+        <text x="18" y="78" fill="#607080" font-size="12">Safe projection</text>
+      </g>
+      <g transform="translate(340 0)">
+        <rect width="148" height="92" rx="10" fill="#F0F4F7" stroke="#C9D3DC"/>
+        <text x="18" y="31" fill="#607080" font-size="11" letter-spacing="1.3">03</text>
+        <text x="18" y="58" fill="#141A22" font-size="16" font-weight="650">Action</text>
+        <text x="18" y="78" fill="#607080" font-size="12">Isolated runtime</text>
+      </g>
+      <g transform="translate(510 0)">
+        <rect width="148" height="92" rx="10" fill="#F0F4F7" stroke="#C9D3DC"/>
+        <text x="18" y="31" fill="#607080" font-size="11" letter-spacing="1.3">04</text>
+        <text x="18" y="58" fill="#141A22" font-size="16" font-weight="650">Artifact</text>
+        <text x="18" y="78" fill="#607080" font-size="12">Diff · file · PTY</text>
+      </g>
+      <g transform="translate(680 0)">
+        <rect width="148" height="92" rx="10" fill="#F0F4F7" stroke="#C9D3DC"/>
+        <text x="18" y="31" fill="#607080" font-size="11" letter-spacing="1.3">05</text>
+        <text x="18" y="58" fill="#141A22" font-size="16" font-weight="650">Verify</text>
+        <text x="18" y="78" fill="#607080" font-size="12">Tests · inspection</text>
+      </g>
+      <g transform="translate(850 0)">
+        <rect width="148" height="92" rx="10" fill="#F0F4F7" stroke="#C9D3DC"/>
+        <text x="18" y="31" fill="#607080" font-size="11" letter-spacing="1.3">06</text>
+        <text x="18" y="58" fill="#141A22" font-size="16" font-weight="650">Receipt</text>
+        <text x="18" y="78" fill="#607080" font-size="12">Evidence-backed</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(56 330)" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+    <rect width="260" height="50" rx="8" fill="#087C6B" fill-opacity="0.08" stroke="#087C6B" stroke-opacity="0.55"/>
+    <circle cx="24" cy="25" r="5" fill="#087C6B"/>
+    <text x="42" y="30" fill="#141A22" font-size="13" font-weight="600">Local-first runtime authority</text>
+
+    <rect x="280" width="260" height="50" rx="8" fill="#845600" fill-opacity="0.08" stroke="#845600" stroke-opacity="0.48"/>
+    <path d="M304 19l6 11h-12l6-11Z" fill="#845600"/>
+    <text x="322" y="30" fill="#141A22" font-size="13" font-weight="600">Explicit approval boundaries</text>
+
+    <rect x="560" width="260" height="50" rx="8" fill="#B4232D" fill-opacity="0.06" stroke="#B4232D" stroke-opacity="0.42"/>
+    <path d="M584 19v12M584 35v1" stroke="#B4232D" stroke-width="2" stroke-linecap="round"/>
+    <text x="602" y="30" fill="#141A22" font-size="13" font-weight="600">Truthful failure and recovery</text>
+
+    <rect x="840" width="248" height="50" rx="8" fill="#087C6B" fill-opacity="0.08" stroke="#087C6B" stroke-opacity="0.55"/>
+    <path d="M864 18l7 4v8l-7 4-7-4v-8l7-4Z" fill="none" stroke="#087C6B" stroke-width="1.5"/>
+    <text x="882" y="30" fill="#141A22" font-size="13" font-weight="600">Inspectable evidence chain</text>
+  </g>
+</svg>
