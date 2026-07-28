@@ -24,6 +24,9 @@
 
 ## Operating profile
 
+I’m **Sasho Abdulrahim Derama**, an AI product builder moving from security-sensitive account
+recovery and blockchain-related systems into governed agentic developer tools.
+
 I design systems where **intent, execution, artifacts, verification, and evidence remain one continuous object**.
 
 <table>
@@ -32,9 +35,9 @@ I design systems where **intent, execution, artifacts, verification, and evidenc
 
 ### Current mission
 
-**MAYA Codex Nexus 6.6.1**
+**[MAYA Codex Nexus 6.8.4](https://github.com/gonzo-max2/maya-codex-nexus)**
 
-Rust control-plane migration, verified autonomous execution, model orchestration, and proof-native desktop interaction.
+Evidence-governed execution, model orchestration, recovery, and proof-native desktop interaction.
 
 </td>
 <td width="50%" valign="top">
@@ -65,6 +68,11 @@ Rust control-plane migration, verified autonomous execution, model orchestration
 > Instruction → Observe → Frame → Decide → Act → Verify → Receipt
 
 The system binds workspace truth, tool execution, transactional edits, runtime failures, verification output, and final receipts into one inspectable causal chain.
+
+**[Product case study](https://github.com/gonzo-max2/maya-codex-nexus)** ·
+**[Architecture](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/ARCHITECTURE.md)** ·
+**[Validation](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/VALIDATION.md)** ·
+**[CV](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/Sasho-Abdulrahim-Derama-CV.pdf)**
 
 <table>
 <tr>
