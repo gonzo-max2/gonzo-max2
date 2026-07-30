@@ -14,6 +14,7 @@ REQUIRED = [
     'docs/data/profile.json', 'docs/site.webmanifest', 'docs/sw.js', 'docs/assets/apex-social.svg',
     'PROFILE_OS_ARCHITECTURE.md', 'DEPLOYMENT.md', 'scripts/build_apex_assets.py',
     'assets/apex/hero-dark.svg', 'assets/apex/hero-light.svg',
+    'assets/apex/nova-dark.svg', 'assets/apex/nova-light.svg',
     'assets/apex/maya-dark.svg', 'assets/apex/maya-light.svg',
     'assets/apex/systems-dark.svg', 'assets/apex/systems-light.svg',
     'assets/apex/vozime-dark.svg', 'assets/apex/vozime-light.svg',
@@ -34,8 +35,10 @@ def main() -> int:
             errors.append(f'missing required file: {rel}')
 
     profile = json.loads((ROOT / 'content' / 'profile.json').read_text(encoding='utf-8'))
-    if len(profile.get('systems', [])) != 9:
-        errors.append('profile must contain exactly nine systems')
+    if len(profile.get('systems', [])) != 10:
+        errors.append('profile must contain exactly ten systems')
+    if not any(item.get('id') == 'nova' for item in profile.get('systems', [])):
+        errors.append('Nova system missing')
     if not any(item.get('id') == 'blockchain' for item in profile.get('systems', [])):
         errors.append('blockchain system missing')
     if not any(item.get('id') == 'vozime' for item in profile.get('systems', [])):

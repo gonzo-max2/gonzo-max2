@@ -1,219 +1,169 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/hero-light.svg">
-  <img alt="GONZO // SYSTEMS — engineering systems that remain truthful under pressure" src="./assets/apex/hero-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/nova-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/nova-light.svg">
+  <img alt="Nova Proof Studio — AI can propose, evidence decides" src="./assets/apex/nova-dark.svg" width="100%">
 </picture>
 
 <p align="center">
-  <strong>Autonomous AI · Mobility · Blockchain · Native DSP · RF sensing · Proof architecture</strong>
+  <strong>Verified AI change · Local-first developer tools · Deterministic evidence · Durable recovery</strong>
 </p>
 
 <p align="center">
-  <a href="#maya-codex-nexus">MAYA</a>
+  <a href="#nova-proof-studio">Nova</a>
   &nbsp;·&nbsp;
-  <a href="#vozime">Vozime</a>
+  <a href="#what-can-be-demonstrated-now">Evidence</a>
   &nbsp;·&nbsp;
-  <a href="#systems-atlas">Systems Atlas</a>
+  <a href="#known-boundaries">Boundaries</a>
   &nbsp;·&nbsp;
-  <a href="#blockchain-proof-fabric">Blockchain</a>
+  <a href="#selected-related-work">Related work</a>
   &nbsp;·&nbsp;
-  <a href="https://gonzo-max2.github.io/gonzo-max2/">Enter Profile OS</a>
+  <a href="https://gonzo-max2.github.io/gonzo-max2/">Profile OS</a>
 </p>
 
 <img src="./assets/continuum-divider.svg" alt="" width="100%">
 
 ## Operating profile
 
-I’m **Sasho Abdulrahim Derama**, an AI product builder moving from security-sensitive account
-recovery and blockchain-related systems into governed agentic developer tools.
+I’m **Maya**, product owner and systems builder behind **Nova**.
 
-I design systems where **intent, execution, artifacts, verification, and evidence remain one continuous object**.
+I build local-first systems where model intent, source mutation, deterministic verification, and evidence remain one inspectable chain. My current focus is the uncomfortable gap between an AI saying that a code change works and a repository proving exactly what changed, against which revision, with which checks, and under whose authority.
+
+Nova is a private technical asset. Repository access, the recorded demonstration, architecture, source package, and due-diligence evidence are available by invitation for serious licensing or acquisition review.
+
+## Nova Proof Studio
+
+**Nova is a local-first Proof Studio for turning bounded AI proposals into inspectable, reversible source changes.**
+
+```text
+prompt + revisioned context
+        ↓
+three candidate strategies
+        ↓
+exact patches + deterministic checks
+        ↓
+explicit human selection
+        ↓
+durable apply / rollback
+        ↓
+local Git commit + evidence
+```
+
+The product is deliberately stricter than a normal prompt-to-code demo. Models can propose. They cannot mark their own checks green, silently select a winner, or write directly to the working tree. The local agent retains source authority and binds candidate evidence to the repository revision it actually inspected.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Current mission
+### What it is
 
-**[MAYA Codex Nexus 6.8.4](https://github.com/gonzo-max2/maya-codex-nexus)**
-
-Evidence-governed execution, model orchestration, recovery, and proof-native desktop interaction.
+- A browser-based candidate and evidence workspace
+- A local source-authority agent
+- Provider-neutral routing for OpenAI, Anthropic, xAI, compatible endpoints, and local Ollama
+- Three distinct candidate strategies per bounded run
+- Deterministic checks for source scope, parsing, types, lint, tests, and preservation policy
+- Explicit selection before mutation
+- Durable transactions with rollback and restart hydration
+- Local Git branch and commit evidence
 
 </td>
 <td width="50%" valign="top">
 
-### Engineering invariants
+### What it is not
+
+- Not a universal mouse-to-code engine
+- Not a claim of compatibility with every framework, animation, or effect
+- Not a deployed multi-tenant SaaS
+- Not a live GitHub App or hosted admission service
+- Not independently security-certified
+- Not proven by customer revenue or a production fleet
+- Not permission for a model to approve its own output
+- Not a substitute for buyer-side technical diligence
+
+</td>
+</tr>
+</table>
+
+## What can be demonstrated now
+
+The current local vertical slice is designed to show a complete causal chain rather than a collection of disconnected mock panels:
+
+1. The Studio prepares context from real project files and the current repository revision.
+2. A configured provider, including local Gemma through Ollama, produces three strategy-specific candidates.
+3. Each candidate receives an exact patch, provenance, elapsed time, cost when reported, and truthful check states.
+4. Nova rejects wrong-target or invalid changes instead of presenting them as successful.
+5. A human explicitly selects a candidate.
+6. The local agent revalidates the source baseline and applies through a durable transaction.
+7. The transaction can roll back and can be hydrated after restart.
+8. Local branch, commit, and evidence records preserve what was actually applied.
+
+The implementation includes a responsive Proof Gallery, mobile review surfaces, keyboard operation, reduced-motion and forced-colors handling, persistent run records, signed local evidence, and a recorded buyer demonstration. Deterministic test fixtures remain in the test boundary; they are not described as live provider results.
+
+For private review: **[request access to the Nova repository](https://github.com/gonzo-max2/NOVA)**. The repository is intentionally private, so the link only resolves for invited accounts.
+
+## Known boundaries
+
+The most commercially important unfinished work is also the most expensive:
+
+- The cloud control plane, organization model, billing, and cross-tenant isolation are architecture, not a deployed service.
+- Agent pairing over an outbound authenticated channel is not production-deployed.
+- The GitHub App, draft-PR creation, remote Check Run, and exact-head merge admission are not live.
+- Runtime screenshots are not yet synchronized into a universal visual-diff pipeline.
+- Provider behavior, front-end frameworks, visual effects, and motion systems cannot be guaranteed universally.
+- Real-provider canaries, external penetration testing, independent accessibility certification, and design-partner results are still required.
+
+Those gaps are disclosed because Nova’s defensible value is the implemented local proof-and-transaction core, the product interaction model, and the architecture—not an unsupported claim that the full enterprise company already exists.
+
+## Why this direction matters
+
+Most AI coding products optimize proposal speed. Nova’s hypothesis is that high-consequence adoption depends on proving the subject and authority of a change:
+
+- Which revision did the model see?
+- Which files and ranges were allowed?
+- What exact patch was evaluated?
+- Which checks ran, and which did not?
+- Who selected and approved it?
+- Can the source be restored if the apply fails?
+- Does later Git evidence still refer to the same immutable subject?
+
+That creates a possible IP position around the integration of candidate generation, revision-bound context, deterministic eligibility, human authority, durable source transactions, and exact-subject admission. It is an implementation and product thesis, not a claim that no prior art exists.
+
+## Selected related work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [MAYA Codex Nexus](https://github.com/gonzo-max2/maya-codex-nexus)
+
+A local-first, evidence-governed AI engineering workbench. It explores model orchestration, transactional workspaces, runtime receipts, recovery, and proof-native desktop interaction.
+
+</td>
+<td width="50%" valign="top">
+
+### [Aegis Unified](https://github.com/gonzo-max2/aegis-unified-0.9.0)
+
+Public repository for local AI runtime and interface work. Its local-model path informed Nova’s capability-aware Ollama and Gemma integration.
+
+</td>
+</tr>
+</table>
+
+The broader portfolio also contains mobility, realtime interaction, native DSP, RF sensing, recovery/forensics, UI-quality automation, and cryptographic-receipt research. These are supporting explorations, not substitutes for the Nova flagship.
+
+## Engineering invariants
 
 - Runtime truth over simulated completion
 - Typed contracts over implicit coupling
 - Receipts over unsupported claims
-- Graceful degradation over blank screens
+- Explicit authority over invisible automation
+- Rollback before mutation
+- Graceful degradation over fake availability
 - Measured performance over decorative motion
 - Research labelled honestly
 
-</td>
-</tr>
-</table>
-
-## MAYA Codex Nexus
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/maya-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/maya-light.svg">
-  <img alt="MAYA Codex Nexus proof continuum" src="./assets/apex/maya-dark.svg" width="100%">
-</picture>
-
-**MAYA** is a local-first autonomous engineering workstation built around a proof continuum:
-
-> Instruction → Observe → Frame → Decide → Act → Verify → Receipt
-
-The system binds workspace truth, tool execution, transactional edits, runtime failures, verification output, and final receipts into one inspectable causal chain.
-
-**[Product case study](https://github.com/gonzo-max2/maya-codex-nexus)** ·
-**[Architecture](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/ARCHITECTURE.md)** ·
-**[Validation](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/VALIDATION.md)** ·
-**[CV](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/Sasho-Abdulrahim-Derama-CV.pdf)**
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Runtime
-
-Tauri desktop shell, Rust-native bridge, authenticated Python sidecar, SSE event transport, worktree isolation, persistent receipts, and deterministic recovery.
-
-</td>
-<td width="33%" valign="top">
-
-### Intelligence
-
-Local and remote model gateways, specialist agents, project memory, retrieval, safe cognition projection, and evidence-aware routing.
-
-</td>
-<td width="33%" valign="top">
-
-### Interface
-
-Mission timeline, Cognition Ribbon, Continuum Spine, contextual surfaces, autonomous tab routing, exact origin restoration, and graceful degradation.
-
-</td>
-</tr>
-</table>
-
-## Vozime
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/vozime-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/vozime-light.svg">
-  <img alt="Vozime deterministic mobility lifecycle" src="./assets/apex/vozime-dark.svg" width="100%">
-</picture>
-
-**Vozime** is a rider-and-driver mobility platform where request, matching, arrival, trip, payment, notification, and safety state advance through one deterministic lifecycle.
-
-`React Native` `Expo` `TypeScript` `Maps` `Realtime state` `Mobile UX`
-
-## Systems Atlas
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/systems-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/systems-light.svg">
-  <img alt="Nine-system engineering atlas" src="./assets/apex/systems-dark.svg" width="100%">
-</picture>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### AURELIS
-
-Deterministic realtime presentation architecture with velocity-driven motion, synchronized audio and haptics, pooled effects, and measured frame performance.
-
-`TypeScript` `React` `Canvas` `Web Audio`
-
-</td>
-<td width="50%" valign="top">
-
-### DERAMA Studio
-
-Native audio-workstation architecture spanning playlist, channel rack, piano roll, mixer, automation, synthesis, sampling, and JUCE DSP.
-
-`C++` `JUCE` `DSP` `Desktop audio`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### AETHER RF Sense
-
-Real-input-only Wi-Fi telemetry research with movement inference, resilient acquisition, calibration, confidence projection, and realtime signal visualization.
-
-`Python` `Signal processing` `RF telemetry`
-
-</td>
-<td width="50%" valign="top">
-
-### CredTrace
-
-Bounded local recovery and forensic analysis with persistent evidence, resumable execution, archive inspection, and redacted exports.
-
-`Python` `SQLite` `Forensics` `Local-first`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### UI_DEBUG_MCP_PRO
-
-Fail-closed UI quality automation for runtime exceptions, authentication failures, accessibility audits, network diagnostics, and machine-readable CI receipts.
-
-`Playwright` `Accessibility` `CI` `Runtime diagnostics`
-
-</td>
-<td width="50%" valign="top">
-
-### Aether Audio Lab
-
-Native DSP and synthesis research spanning spatial reverb, modulation, advanced synthesis, realtime visualization, and instrument-grade controls.
-
-`C++` `JUCE` `DSP` `Synthesis`
-
-</td>
-</tr>
-</table>
-
-## Blockchain Proof Fabric
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/ledger-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/ledger-light.svg">
-  <img alt="Blockchain cryptographic receipt and Merkle proof architecture" src="./assets/apex/ledger-dark.svg" width="100%">
-</picture>
-
-The blockchain track is an explicitly labelled **research direction** focused on:
-
-- SHA-256 execution receipts
-- Chained event integrity
-- Merkle proof aggregation
-- Smart-contract safety boundaries
-- Verifiable autonomous actions
-- Zero-knowledge architecture
-- Honest separation of on-chain and off-chain authority
-
-The interactive Profile OS includes a browser-native tamper demonstration with no wallet, token, RPC endpoint, transaction signing, or financial interaction.
-
-## Capability maturity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/capabilities-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/capabilities-light.svg">
-  <img alt="Engineering capability maturity matrix" src="./assets/apex/capabilities-dark.svg" width="100%">
-</picture>
-
 ## Engineering activity
 
-The activity panel is generated by this repository's own GitHub Actions workflow using GitHub's API. It does not depend on a third-party profile-stat renderer.
+The activity panel is generated by this repository’s GitHub Actions workflow using GitHub’s API. It does not depend on a third-party profile-stat renderer.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
@@ -221,19 +171,10 @@ The activity panel is generated by this repository's own GitHub Actions workflow
   <img alt="Verified GitHub engineering activity" src="./assets/activity-dark.svg" width="100%">
 </picture>
 
-## Collaboration model
+## Serious inquiries
 
-I work best on systems requiring architectural depth:
-
-- Autonomous developer tooling
-- Secure local AI infrastructure
-- Mobility and dispatch platforms
-- Blockchain verification and cryptographic receipt systems
-- Native desktop and audio software
-- RF telemetry and scientific interfaces
-- Recovery, evidence, and verification tooling
-- High-performance, accessibility-complete interaction systems
+For private technical diligence, licensing, or acquisition discussion, open a short non-confidential issue in this profile repository or use the repository-access channel already shared. Sensitive material should not be posted publicly.
 
 <p align="center">
-  <strong>Build locally. Verify everything. Ship with evidence.</strong>
+  <strong>AI can propose. Evidence decides.</strong>
 </p>

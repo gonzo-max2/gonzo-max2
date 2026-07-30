@@ -1,13 +1,13 @@
 {
   "schema": "gonzo-profile-os/v1",
   "identity": {
-    "name": "Mihail Petkov",
+    "name": "Maya",
     "username": "gonzo-max2",
     "brand": "GONZO // SYSTEMS",
     "location": "Sofia, Bulgaria",
     "timezone": "Europe/Sofia",
-    "headline": "Engineering systems that prove what they actually did.",
-    "bio": "Building proof-native autonomous systems, local-first AI infrastructure, mobility platforms, blockchain architecture, and instrument-grade products.",
+    "headline": "Building software systems that prove what they actually changed.",
+    "bio": "Product owner and systems builder focused on verified AI change, local-first infrastructure, deterministic recovery, and evidence-bound developer tools.",
     "principles": [
       "Runtime truth over simulated completion",
       "Typed contracts over implicit coupling",
@@ -18,12 +18,13 @@
     ]
   },
   "current": {
-    "flagship": "MAYA Codex Nexus",
-    "release": "6.6.1",
-    "status": "ACTIVE DEVELOPMENT",
-    "mission": "Rust control plane, verified autonomous execution, and model orchestration"
+    "flagship": "Nova Proof Studio",
+    "release": "9.0.0 local vertical slice",
+    "status": "PRIVATE DILIGENCE",
+    "mission": "Bounded AI code changes, deterministic evidence, explicit apply, and rollback"
   },
   "domains": [
+    "VERIFIED AI CHANGE",
     "AUTONOMOUS AI",
     "MOBILITY",
     "BLOCKCHAIN",
@@ -33,6 +34,25 @@
     "REALTIME UX"
   ],
   "systems": [
+    {
+      "id": "nova",
+      "name": "Nova Proof Studio",
+      "short": "NOVA",
+      "domain": "Verified AI software change",
+      "status": "private acquisition-ready technical asset",
+      "maturity": "integrated",
+      "accent": "#4C8DFF",
+      "summary": "Local-first Proof Studio that binds revisioned source context, three model-generated candidates, deterministic checks, human selection, durable apply and rollback, and exact Git evidence.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Ollama",
+        "Git",
+        "Ed25519",
+        "Playwright"
+      ]
+    },
     {
       "id": "maya",
       "name": "MAYA Codex Nexus",
@@ -193,6 +213,18 @@
   ],
   "caseStudies": [
     {
+      "id": "nova",
+      "name": "Nova Proof Studio",
+      "problem": "AI coding tools can propose convincing changes without proving the exact source target, verification state, or repository subject.",
+      "system": "A local-first candidate tournament that binds context and patches to a repository revision, separates human selection from source authority, applies through durable transactions, and emits evidence for exact Git admission.",
+      "proof": [
+        "Three isolated candidate strategies",
+        "Deterministic source-preservation checks",
+        "Durable apply and rollback",
+        "Seller-recorded local Gemma demonstration"
+      ]
+    },
+    {
       "id": "maya",
       "name": "MAYA Codex Nexus",
       "problem": "Autonomous developer tools often claim success without preserving causal evidence.",
@@ -242,6 +274,13 @@
     }
   ],
   "capabilities": [
+    {
+      "name": "Verified AI change control",
+      "research": true,
+      "prototype": true,
+      "integrated": true,
+      "verified": true
+    },
     {
       "name": "Autonomous runtime",
       "research": true,

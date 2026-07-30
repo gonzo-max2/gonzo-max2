@@ -9,8 +9,8 @@ readonly REPOSITORY="${PROFILE_REPOSITORY:-gonzo-max2}"
 readonly REPO_FULL="${OWNER}/${REPOSITORY}"
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 readonly SOURCE_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd -P)"
-readonly PROFILE_NAME="${PROFILE_NAME:-Mihail Petkov}"
-readonly PROFILE_BIO="${PROFILE_BIO:-Building proof-native autonomous systems, local-first AI infrastructure, and instrument-grade desktop products.}"
+readonly PROFILE_NAME="${PROFILE_NAME:-Maya}"
+readonly PROFILE_BIO="${PROFILE_BIO:-Building Nova: local-first AI code change with deterministic evidence, durable apply and rollback.}"
 readonly PROFILE_LOCATION="${PROFILE_LOCATION:-Sofia, Bulgaria}"
 
 TEMP_DIR=""
@@ -83,7 +83,7 @@ if ! gh repo view "${REPO_FULL}" >/dev/null 2>&1; then
     --method POST \
     /user/repos \
     -f "name=${REPOSITORY}" \
-    -f "description=GONZO // SYSTEMS — proof-native autonomous engineering and local-first infrastructure." \
+    -f "description=Maya — Nova Proof Studio and verified local-first AI change systems." \
     -F private=false \
     -F has_issues=true \
     -F has_projects=false \
@@ -106,7 +106,7 @@ note "Configuring repository presentation and features"
 gh api \
   --method PATCH \
   "/repos/${REPO_FULL}" \
-  -f "description=GONZO // SYSTEMS — proof-native autonomous engineering and local-first infrastructure." \
+  -f "description=Maya — Nova Proof Studio and verified local-first AI change systems." \
   -F has_issues=true \
   -F has_projects=false \
   -F has_wiki=false \
@@ -117,6 +117,7 @@ gh api \
   --method PUT \
   "/repos/${REPO_FULL}/topics" \
   -f 'names[]=systems-engineering' \
+  -f 'names[]=ai-code-review' \
   -f 'names[]=autonomous-ai' \
   -f 'names[]=local-first' \
   -f 'names[]=rust' \
@@ -153,7 +154,7 @@ rsync -a --delete \
 cd "${repo_dir}"
 python3 scripts/validate_profile.py
 
-git config user.name "${PROFILE_GIT_NAME:-Mihail Petkov}"
+git config user.name "${PROFILE_GIT_NAME:-Maya}"
 git config user.email "${PROFILE_GIT_EMAIL:-gonzo-max2@users.noreply.github.com}"
 
 current_branch="$(git branch --show-current || true)"

@@ -21,6 +21,46 @@ def main() -> int:
     (ROOT / 'docs' / 'data').mkdir(parents=True, exist_ok=True)
     shutil.copy2(profile_path, ROOT / 'docs' / 'data' / 'profile.json')
 
+    manifest_files = {}
+    for path in sorted(
+        p for p in ROOT.rglob('*')
+        if p.is_file()
+        and '.git' not in p.parts
+        and 'receipts' not in p.parts
+        and p.name != 'PROFILE_MANIFEST.json'
+    ):
+        rel = path.relative_to(ROOT).as_posix()
+        manifest_files[rel] = {
+            'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
+            'bytes': path.stat().st_size,
+        }
+    manifest = {
+        'schema': 'gonzo-profile-os-manifest/v2',
+        'release': 'Nova Flagship Profile',
+        'systems': len(profile['systems']),
+        'github_native_svg_variants': len(list((ROOT / 'assets' / 'apex').glob('*.svg'))),
+        'pages_runtime': {
+            'external_javascript_dependencies': 0,
+            'external_font_dependencies': 0,
+            'interactive_systems': len(profile['systems']),
+            'proof_cases': len(profile.get('caseStudies', [])),
+        },
+        'security': {
+            'contains_credentials': False,
+            'secret_pattern_gate': True,
+            'wallet_or_rpc_dependency': False,
+        },
+        'verification': {
+            'manifest_scope': 'generated source and assets; receipts are intentionally separate',
+            'build_profile': 'passed',
+        },
+        'files': manifest_files,
+    }
+    (ROOT / 'PROFILE_MANIFEST.json').write_text(
+        json.dumps(manifest, indent=2) + '\n',
+        encoding='utf-8',
+    )
+
     files = {}
     for path in sorted(p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.parts and 'receipts' not in p.parts):
         rel = path.relative_to(ROOT).as_posix()

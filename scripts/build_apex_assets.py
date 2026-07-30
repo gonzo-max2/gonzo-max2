@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from html import escape
 import json
+import math
 from pathlib import Path
 from typing import Any
 
@@ -67,7 +68,7 @@ def hero(dark: bool) -> str:
 <text x="80" y="240" fill="{c['text']}" font-family="Inter,system-ui,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">that remain truthful</text>
 <text x="80" y="308" fill="url(#titleGradient)" font-family="Inter,system-ui,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">under pressure.</text>
 <text x="82" y="357" fill="{c['muted']}" font-family="Inter,system-ui,sans-serif" font-size="16">Autonomous AI · Mobility · Blockchain · Native DSP · RF sensing · Proof architecture</text>
-<g transform="translate(82 397)" font-family="ui-monospace,Consolas,monospace" font-size="10"><circle class="pulse" cx="6" cy="7" r="5" fill="{c['teal']}"/><text x="22" y="11" fill="{c['text']}">ACTIVE DEVELOPMENT</text><text x="190" y="11" fill="{c['muted']}">MAYA 6.6.1</text><text x="300" y="11" fill="{c['muted']}">09 SYSTEMS</text><text x="404" y="11" fill="{c['muted']}">PROFILE OS / APEX</text></g>
+<g transform="translate(82 397)" font-family="ui-monospace,Consolas,monospace" font-size="10"><circle class="pulse" cx="6" cy="7" r="5" fill="{c['teal']}"/><text x="22" y="11" fill="{c['text']}">PRIVATE DILIGENCE</text><text x="190" y="11" fill="{c['muted']}">NOVA 9.0.0</text><text x="300" y="11" fill="{c['muted']}">10 SYSTEMS</text><text x="404" y="11" fill="{c['muted']}">PROFILE OS / APEX</text></g>
 <g>
   <circle cx="892" cy="260" r="184" fill="none" stroke="{c['teal']}" stroke-opacity=".28"/>
   <circle class="spin" cx="892" cy="260" r="138" fill="none" stroke="{c['teal']}" stroke-opacity=".28" stroke-dasharray="4 9"/>
@@ -75,7 +76,7 @@ def hero(dark: bool) -> str:
   <rect x="837" y="205" width="110" height="110" rx="27" fill="{c['surface']}" stroke="{c['teal']}"/>
   <text x="892" y="278" text-anchor="middle" fill="{c['teal']}" font-family="Inter,system-ui,sans-serif" font-size="50" font-weight="780">G</text>
   <g fill="{c['surface']}" stroke="{c['line']}"><rect x="695" y="130" width="84" height="34" rx="17"/><rect x="996" y="153" width="94" height="34" rx="17"/><rect x="1024" y="342" width="86" height="34" rx="17"/><rect x="724" y="370" width="80" height="34" rx="17"/><rect x="664" y="258" width="68" height="34" rx="17"/></g>
-  <g fill="{c['muted']}" font-family="ui-monospace,Consolas,monospace" font-size="9" text-anchor="middle"><text x="737" y="151">MAYA</text><text x="1043" y="174">VOZIME</text><text x="1067" y="363">CHAIN</text><text x="764" y="391">DSP</text><text x="698" y="279">RF</text></g>
+  <g fill="{c['muted']}" font-family="ui-monospace,Consolas,monospace" font-size="9" text-anchor="middle"><text x="737" y="151">NOVA</text><text x="1043" y="174">MAYA</text><text x="1067" y="363">CHAIN</text><text x="764" y="391">DSP</text><text x="698" y="279">RF</text></g>
   <g fill="{c['teal']}"><circle cx="892" cy="76" r="5"/><circle cx="1032" cy="154" r="5"/><circle cx="1038" cy="348" r="5"/><circle cx="800" cy="416" r="5"/><circle cx="708" cy="250" r="5"/></g>
 </g>
 <path class="flow" d="M80 466H1120" stroke="{c['teal']}" stroke-opacity=".55" stroke-width="2"/>
@@ -105,22 +106,26 @@ def maya(dark: bool) -> str:
 def systems(dark: bool) -> str:
     c=palette(dark)
     systems=PROFILE['systems']
-    positions=[(600,290),(335,120),(865,118),(1000,285),(858,458),(600,500),(340,458),(205,286),(600,92)]
+    center=(600,310)
+    positions=[center]
+    for index in range(1, len(systems)):
+        angle=-math.pi/2 + (index-1) * (2*math.pi/(len(systems)-1))
+        positions.append((600+400*math.cos(angle), 310+210*math.sin(angle)))
     cards=[]
     links=[]
     for i,(system,(x,y)) in enumerate(zip(systems,positions,strict=True)):
         accent=system['accent']
         if i:
-            links.append(f'<path d="M600 290L{x} {y}" stroke="{accent}" stroke-opacity=".24"/>')
+            links.append(f'<path d="M{center[0]} {center[1]}L{x:.1f} {y:.1f}" stroke="{accent}" stroke-opacity=".24"/>')
         w=190 if i else 224
         h=72 if i else 94
-        cards.append(f'''<g transform="translate({x-w/2} {y-h/2})"><rect width="{w}" height="{h}" rx="14" fill="{c['surface']}" stroke="{accent}" stroke-opacity=".65"/><text x="18" y="29" fill="{c['faint']}" font-family="ui-monospace,Consolas,monospace" font-size="8">{i+1:02d} · {escape(system['domain'].upper())}</text><text x="18" y="53" fill="{c['text']}" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">{escape(system['short'])}</text>{'<text x="18" y="76" fill="'+c['muted']+'" font-family="ui-monospace,Consolas,monospace" font-size="8">FLAGSHIP / 6.6.1</text>' if i==0 else ''}<circle cx="{w-18}" cy="20" r="4" fill="{accent}"/></g>''')
-    return f'''{header(1200, 610, 'Systems Atlas', 'Nine operational worlds connected by one engineering standard.')}
+        cards.append(f'''<g transform="translate({x-w/2:.1f} {y-h/2:.1f})"><rect width="{w}" height="{h}" rx="14" fill="{c['surface']}" stroke="{accent}" stroke-opacity=".65"/><text x="18" y="29" fill="{c['faint']}" font-family="ui-monospace,Consolas,monospace" font-size="8">{i+1:02d} · {escape(system['domain'].upper())}</text><text x="18" y="53" fill="{c['text']}" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">{escape(system['short'])}</text>{'<text x="18" y="76" fill="'+c['muted']+'" font-family="ui-monospace,Consolas,monospace" font-size="8">FLAGSHIP / 9.0.0 LOCAL</text>' if i==0 else ''}<circle cx="{w-18}" cy="20" r="4" fill="{accent}"/></g>''')
+    return f'''{header(1200, 610, 'Systems Atlas', 'Ten product and research systems connected by one engineering standard.')}
 <rect width="1200" height="610" rx="18" fill="{c['bg']}"/><rect x="1" y="1" width="1198" height="608" rx="17" fill="none" stroke="{c['line']}"/>
-<text x="56" y="50" fill="{c['muted']}" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2">SYSTEMS ATLAS / NINE OPERATIONAL WORLDS</text>
-<text x="56" y="88" fill="{c['text']}" font-family="Inter,system-ui,sans-serif" font-size="27" font-weight="720">One engineering standard across nine product domains.</text>
+<text x="56" y="50" fill="{c['muted']}" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2">SYSTEMS ATLAS / TEN PRODUCT AND RESEARCH SYSTEMS</text>
+<text x="56" y="88" fill="{c['text']}" font-family="Inter,system-ui,sans-serif" font-size="27" font-weight="720">Verified AI change is the flagship.</text>
 <g stroke-width="1.5">{''.join(links)}</g>{''.join(cards)}
-<text x="56" y="580" fill="{c['muted']}" font-family="Inter,system-ui,sans-serif" font-size="11">Autonomous AI · Mobility · Realtime interaction · Native DSP · RF sensing · Forensics · Quality automation · Blockchain research</text>
+<text x="56" y="580" fill="{c['muted']}" font-family="Inter,system-ui,sans-serif" font-size="11">Verified AI change · Autonomous AI · Mobility · Realtime interaction · Native DSP · RF sensing · Forensics · Quality automation · Blockchain research</text>
 </svg>'''
 
 

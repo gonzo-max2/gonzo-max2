@@ -1,15 +1,13 @@
 {
-  "schema": "gonzo-profile-os-apex-manifest/v1",
-  "release": "APEX Another World 2026-07-15",
-  "systems": 9,
-  "github_native_svg_variants": 12,
+  "schema": "gonzo-profile-os-manifest/v2",
+  "release": "Nova Flagship Profile",
+  "systems": 10,
+  "github_native_svg_variants": 14,
   "pages_runtime": {
     "external_javascript_dependencies": 0,
     "external_font_dependencies": 0,
-    "canvas_scenes": 3,
-    "interactive_systems": 9,
-    "proof_cases": 4,
-    "blockchain_demo": "SHA-256 chained receipts + Merkle aggregation"
+    "interactive_systems": 10,
+    "proof_cases": 5
   },
   "security": {
     "contains_credentials": false,
@@ -17,12 +15,8 @@
     "wallet_or_rpc_dependency": false
   },
   "verification": {
-    "static_structure": "passed",
-    "javascript_syntax": "passed",
-    "python_compilation": "passed",
-    "bash_syntax": "passed",
-    "browser_interaction_smoke": "passed",
-    "visual_proof_screenshots": 5
+    "manifest_scope": "generated source and assets; receipts are intentionally separate",
+    "build_profile": "passed"
   },
   "files": {
     ".github/workflows/build-profile-os.yml": {
@@ -54,40 +48,40 @@
       "bytes": 4067
     },
     "PROFILE_SETUP.md": {
-      "sha256": "cbadef2ebb88aad06339ad4f0244851bab5e2be4103ac95df528a8ba474a5221",
-      "bytes": 4001
+      "sha256": "3441a04e9742146c3d38a9cfe6aa68da0ab50e87f76448b1ad52a83b2a14e364",
+      "bytes": 3856
     },
     "README.md": {
-      "sha256": "ae08693e8ec99ea6e23fdfea03af6418a16fb04293de998ab6ef387ef1ec9125",
-      "bytes": 7405
+      "sha256": "0f4e8073488a0ff061ec722c7241620015b75586df00738de95587f4485fd493",
+      "bytes": 8381
     },
     "SECURITY.md": {
       "sha256": "b476ecb296a3b155655f64a389cc88710299ceb3c62165dd345973badc61b46c",
       "bytes": 632
     },
     "assets/activity-dark.svg": {
-      "sha256": "1bb67090cbb37eb0e00dc00592304fe6aafe22906fb0918e74406238a9620785",
-      "bytes": 34210
+      "sha256": "abfa6e7ca187becdd92c0eac024cbf13ffa487cef3f6b5cdcbba065d5ef16e97",
+      "bytes": 46109
     },
     "assets/activity-light.svg": {
-      "sha256": "b7503a4985511ea2a82e770d57fe1272dfe11a3ee2a9b7c09f6dfe00fa21208a",
-      "bytes": 34210
+      "sha256": "f25fd66653f38414c3cfa505e44a02b44b0b829a4742a5046f000af08a124529",
+      "bytes": 46109
     },
     "assets/apex/capabilities-dark.svg": {
-      "sha256": "342db2156c6c830934c5565e384f1a52c954b03aa72b57cea2e5b40228c179cf",
-      "bytes": 4443
+      "sha256": "d2063749de7ac374969fcfb0c3ae746b2e43f4295ff1ca654dea294e5c5bd57d",
+      "bytes": 4829
     },
     "assets/apex/capabilities-light.svg": {
-      "sha256": "bfa902a97d92d410de551bf8b742067fac536d4148dbb3b0c857f6419135a733",
-      "bytes": 4443
+      "sha256": "6db1536b70aba24e03b6c21dbfab18db02dcbbc1fe5429fc3510dca337c1f77d",
+      "bytes": 4829
     },
     "assets/apex/hero-dark.svg": {
-      "sha256": "4051acfbeba35a457e82eba90935423af58171855830c19764a150cdd8415140",
-      "bytes": 4798
+      "sha256": "6ba59bb16fd77512cc0639818e30067cf72a9b5d9afba7168a95c9a2ff017529",
+      "bytes": 4795
     },
     "assets/apex/hero-light.svg": {
-      "sha256": "98eec497dd25bd739a5c5ca50fc1f276b6e8325bb65e13794873359c5159d707",
-      "bytes": 4798
+      "sha256": "4f709f077748399b40977818a006ba06b526cf3d513576a81b8735b6adebaf62",
+      "bytes": 4795
     },
     "assets/apex/ledger-dark.svg": {
       "sha256": "e63d05be6470a96e4c08099618ebc6225724d2c9a4dbae462cd417a69a1fc07f",
@@ -105,13 +99,21 @@
       "sha256": "3967b040b0951e57fd738d7178609d665353ea935ef33688876b2dde3a007015",
       "bytes": 5052
     },
+    "assets/apex/nova-dark.svg": {
+      "sha256": "b0ce836f6384151cebbecfbffa5e298ad58f458c5ef74832d06494d5844d7e58",
+      "bytes": 5312
+    },
+    "assets/apex/nova-light.svg": {
+      "sha256": "9bdbc2f38f5e244b8bcd62ce3426ecb40b9fc0d1e8c0c543de1f8b0caa98a311",
+      "bytes": 5009
+    },
     "assets/apex/systems-dark.svg": {
-      "sha256": "b895b05047646595f320585d7a5d7335000f2199cc1e86de58ef248a51d8a0e2",
-      "bytes": 5542
+      "sha256": "ae882d6cf4602b1bcf87560b6f1e8965153b45201c07a656d57315132a4f4900",
+      "bytes": 6110
     },
     "assets/apex/systems-light.svg": {
-      "sha256": "f820476783c274b194050f8e7335209a13491149fa66fb13be393b083faa5406",
-      "bytes": 5542
+      "sha256": "6cc8a44f665841b7c4a165d657bf0f428fde6f978c7e8673adb4e7687bd65abf",
+      "bytes": 6110
     },
     "assets/apex/vozime-dark.svg": {
       "sha256": "6ceb514c20aaf96804896608c752d4051d5a3d4037d60b382e3bb74514c050d4",
@@ -174,8 +176,8 @@
       "bytes": 5082
     },
     "content/profile.json": {
-      "sha256": "2622f2402e763b1b9615b927332da559daee01ed5a4e24bd54bd5c82ebe849c4",
-      "bytes": 9626
+      "sha256": "78ae4008f2bfdd92a3ee0ed3d24fd45234ac8d6abe3e6a114090c8a313f70230",
+      "bytes": 11133
     },
     "docs/404.html": {
       "sha256": "2f7a461b9c22a8f4850acb5825b5fd6848e381035db8d1fead75b681c2abe098",
@@ -194,8 +196,8 @@
       "bytes": 34210
     },
     "docs/assets/apex-social.svg": {
-      "sha256": "c2dffb07990fc9f0c2b90d1acbae5a0cdafb7c1c82718ccdc6b4428276dc2b9c",
-      "bytes": 2924
+      "sha256": "7968813fce02283b694486c23d49599bd4e34b19ca17db6c37272e30031ff6fe",
+      "bytes": 2912
     },
     "docs/assets/blockchain-dark.svg": {
       "sha256": "5b244429c5dff419915c6559bc24e89239e5770bf089d323ff397a31094713e2",
@@ -242,12 +244,12 @@
       "bytes": 9888
     },
     "docs/data/profile.json": {
-      "sha256": "2622f2402e763b1b9615b927332da559daee01ed5a4e24bd54bd5c82ebe849c4",
-      "bytes": 9626
+      "sha256": "78ae4008f2bfdd92a3ee0ed3d24fd45234ac8d6abe3e6a114090c8a313f70230",
+      "bytes": 11133
     },
     "docs/index.html": {
-      "sha256": "d093293be17f2fe271dc1c330a501e3eb3738a20ebfe2d4294c4c333e0ba946e",
-      "bytes": 17932
+      "sha256": "61c18d2e12da6903280bd7a60dc5fd39cc9a3682621f03cb082b4c19fb90c0fa",
+      "bytes": 17910
     },
     "docs/site.webmanifest": {
       "sha256": "59e786c7f08f0a177c70da342c0d9d6e4a9c19b28997cebb79a2dccb6ad1a2c0",
@@ -261,69 +263,57 @@
       "sha256": "2413c168307a03400d5fa35f505367d4a3452ba21970ebb2dad4e841bad24684",
       "bytes": 648
     },
-    "receipts/profile-build.json": {
-      "sha256": "cabbb2d1637f212f466cffa85ec4f30649d8a58712065ef510c9d3d7d64cbddb",
-      "bytes": 10389
+    "scripts/__pycache__/build_apex_assets.cpython-312.pyc": {
+      "sha256": "6c092e184fb6f64bc0bb9327f06127e3f4e5719187546a65845ed3e79f16b767",
+      "bytes": 28782
     },
-    "receipts/security-and-structure.json": {
-      "sha256": "21e43ff0f58a47928c87aec960f19fb3b524dc33eb39de290d0111a8f3631679",
-      "bytes": 2594
+    "scripts/__pycache__/build_profile.cpython-312.pyc": {
+      "sha256": "d6d0600c46a99c983451a62ced095d79b007feb4bc3038894c2964aae4a9e06e",
+      "bytes": 3395
     },
-    "receipts/ui-smoke.json": {
-      "sha256": "add243e388d4e284946259a5315bf2e428ddaaacd6e9710a93dd5c982d5ba710",
-      "bytes": 366
+    "scripts/__pycache__/generate_activity.cpython-312.pyc": {
+      "sha256": "14a53bfbd729a33fdca52328046adcf7fbf6acde630be5ee2f4005be58906b34",
+      "bytes": 12974
     },
-    "receipts/visual-proof/README.md": {
-      "sha256": "fc2bc12c224fb7eac7a0bda0fc8e5df0f0cc2066ee43b0bc0a175cf717433977",
-      "bytes": 655
+    "scripts/__pycache__/ui_smoke_test.cpython-312.pyc": {
+      "sha256": "58f44e9edddc3035cebcf556f27854b79469c673381fdc3b6a129e502429edc6",
+      "bytes": 5430
     },
-    "receipts/visual-proof/atlas-1440x1000.png": {
-      "sha256": "8f88e62c8f719db6d8a455b163bf995ee306028c40cc5357d1cafdc6f2baaa84",
-      "bytes": 352637
+    "scripts/__pycache__/validate_profile.cpython-312.pyc": {
+      "sha256": "1b101827549152b6b49b9cda2b0d740511adb3463065b49effcfc9d8d12af098",
+      "bytes": 4818
     },
-    "receipts/visual-proof/hero-1440x1000.png": {
-      "sha256": "3d031c59a0c0ca77bc41798520c672a14632a16ff03ee4fb1adf14e3c83a56b5",
-      "bytes": 541086
-    },
-    "receipts/visual-proof/ledger-1440x1000.png": {
-      "sha256": "7351442c7626cca103ee6d98ccb27e4c4943088fcca01938d14f0e4359fbd4e9",
-      "bytes": 369979
-    },
-    "receipts/visual-proof/maya-1440x1000.png": {
-      "sha256": "cc1da7c998787a09a65e8a1a5071494c14f1e853da1711e9d466f66e930b4c6c",
-      "bytes": 429513
-    },
-    "receipts/visual-proof/vozime-1440x1000.png": {
-      "sha256": "683400362e74bb5f5646334863e4263f693bea12d295dba1dc9fb61b9802488b",
-      "bytes": 340205
+    "scripts/__pycache__/verify_profile_os.cpython-312.pyc": {
+      "sha256": "177b7fc0b5e42755b5eb6bd7db4bf81842226970fed18b7af557dcf514aceeec",
+      "bytes": 8724
     },
     "scripts/build_apex_assets.py": {
-      "sha256": "84da62c1c6c8ba7a8ce02c31e6299becbb26ecb3a2d3de1b97e45bdc04011c04",
-      "bytes": 19413
+      "sha256": "03a55c032df97c6a0f1b3ffe183691ef75f56aae788d9ba3e0b93380112352c8",
+      "bytes": 19606
     },
     "scripts/build_profile.py": {
-      "sha256": "84fd922088896786b6655be9e10b3f7be06e966304bcfba6825613129ae22d8a",
-      "bytes": 1705
+      "sha256": "e5a1f5d3948ad1be4ba44328d4bf28327f1764821148f62d8a306219f431b6d3",
+      "bytes": 3147
     },
     "scripts/deploy_profile_secure.sh": {
-      "sha256": "7f2325e757a73cea37ffea9260715e892a779401391855a54dc7c8869e922e91",
-      "bytes": 5663
+      "sha256": "8fee6ae5e66992447ef2a82dbf2308656deef6fde91cc5da4eea06723f34eded",
+      "bytes": 5628
     },
     "scripts/generate_activity.py": {
       "sha256": "16dd6bc3617869015b96dddf6c5303118e9b287fd12401d3c26ba6121d2741fe",
       "bytes": 8650
     },
     "scripts/ui_smoke_test.py": {
-      "sha256": "4f197e49fe39de8e7d1949926b1ce8aa12991a63e59d7abcb28ac121dfcf3214",
-      "bytes": 2721
+      "sha256": "76617baffcecea66aacd1c686030b4758dd4630598c7816b443eaa4cdb0e0b85",
+      "bytes": 2733
     },
     "scripts/validate_profile.py": {
-      "sha256": "b3100aec54843499559d458069764606a64e819bba6b0b763119354a38690687",
-      "bytes": 2744
+      "sha256": "b75d3ab699b9df7f31bb8880da5209646c33535cd5716556f62b512474d08456",
+      "bytes": 2807
     },
     "scripts/verify_profile_os.py": {
-      "sha256": "ce56e2c3a14fd17cf5ac9182bcbe5622012f82c60d8f2771072dc8629721ea2d",
-      "bytes": 5208
+      "sha256": "80e7001ab12a8d6e445f6ca81f2e67556372d741cff38244c19ffb55077f5019",
+      "bytes": 5397
     },
     "scripts/verify_profile_remote.sh": {
       "sha256": "1988e9fad9072a0479e23fcae6bd9f697fa43d1c927571d8ad99dbd2b085b41d",

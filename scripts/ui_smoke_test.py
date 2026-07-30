@@ -15,7 +15,7 @@ try:
   page.add_style_tag(content=css)
   page.evaluate('(profile)=>window.__PROFILE__=profile',profile)
   page.add_script_tag(content=js)
-  page.wait_for_function("document.querySelectorAll('.atlas-tab').length===9",timeout=15000)
+  page.wait_for_function("document.querySelectorAll('.atlas-tab').length===10",timeout=15000)
   page.evaluate("document.documentElement.dataset.motion='off'; state.motion=false; document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('revealed'))")
   checks=receipt['checks']
   checks['atlas_tabs']=page.locator('.atlas-tab').count()
@@ -27,7 +27,7 @@ try:
   page.locator('#repair-ledger').click(); page.wait_for_timeout(250); checks['ledger_repair']=page.locator('#ledger-state').inner_text().strip()
   checks['duplicate_ids']=page.evaluate("()=>{const a=[...document.querySelectorAll('[id]')].map(x=>x.id); return a.filter((x,i)=>a.indexOf(x)!==i)}")
   receipt['passed']=not receipt['errors'] and checks=={
-    'atlas_tabs':9,'proof_tabs':4,'atlas_switch':'Vozime','phase_switch':'Act','trip_switch':'COMPLETE','ledger_tamper':'MUTATION DETECTED','ledger_repair':'PROOF FABRIC VALID','duplicate_ids':[]}
+    'atlas_tabs':10,'proof_tabs':5,'atlas_switch':'MAYA Codex Nexus','phase_switch':'Act','trip_switch':'COMPLETE','ledger_tamper':'MUTATION DETECTED','ledger_repair':'PROOF FABRIC VALID','duplicate_ids':[]}
   receipt['expected_pass']=True
 except Exception as e:
   receipt['errors'].append(repr(e))

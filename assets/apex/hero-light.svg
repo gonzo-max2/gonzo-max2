@@ -24,7 +24,7 @@
 <text x="80" y="240" fill="#11181d" font-family="Inter,system-ui,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">that remain truthful</text>
 <text x="80" y="308" fill="url(#titleGradient)" font-family="Inter,system-ui,sans-serif" font-size="58" font-weight="760" letter-spacing="-2">under pressure.</text>
 <text x="82" y="357" fill="#687782" font-family="Inter,system-ui,sans-serif" font-size="16">Autonomous AI · Mobility · Blockchain · Native DSP · RF sensing · Proof architecture</text>
-<g transform="translate(82 397)" font-family="ui-monospace,Consolas,monospace" font-size="10"><circle class="pulse" cx="6" cy="7" r="5" fill="#087c6b"/><text x="22" y="11" fill="#11181d">ACTIVE DEVELOPMENT</text><text x="190" y="11" fill="#687782">MAYA 6.6.1</text><text x="300" y="11" fill="#687782">09 SYSTEMS</text><text x="404" y="11" fill="#687782">PROFILE OS / APEX</text></g>
+<g transform="translate(82 397)" font-family="ui-monospace,Consolas,monospace" font-size="10"><circle class="pulse" cx="6" cy="7" r="5" fill="#087c6b"/><text x="22" y="11" fill="#11181d">PRIVATE DILIGENCE</text><text x="190" y="11" fill="#687782">NOVA 9.0.0</text><text x="300" y="11" fill="#687782">10 SYSTEMS</text><text x="404" y="11" fill="#687782">PROFILE OS / APEX</text></g>
 <g>
   <circle cx="892" cy="260" r="184" fill="none" stroke="#087c6b" stroke-opacity=".28"/>
   <circle class="spin" cx="892" cy="260" r="138" fill="none" stroke="#087c6b" stroke-opacity=".28" stroke-dasharray="4 9"/>
@@ -32,7 +32,7 @@
   <rect x="837" y="205" width="110" height="110" rx="27" fill="#ffffff" stroke="#087c6b"/>
   <text x="892" y="278" text-anchor="middle" fill="#087c6b" font-family="Inter,system-ui,sans-serif" font-size="50" font-weight="780">G</text>
   <g fill="#ffffff" stroke="#c7d1d7"><rect x="695" y="130" width="84" height="34" rx="17"/><rect x="996" y="153" width="94" height="34" rx="17"/><rect x="1024" y="342" width="86" height="34" rx="17"/><rect x="724" y="370" width="80" height="34" rx="17"/><rect x="664" y="258" width="68" height="34" rx="17"/></g>
-  <g fill="#687782" font-family="ui-monospace,Consolas,monospace" font-size="9" text-anchor="middle"><text x="737" y="151">MAYA</text><text x="1043" y="174">VOZIME</text><text x="1067" y="363">CHAIN</text><text x="764" y="391">DSP</text><text x="698" y="279">RF</text></g>
+  <g fill="#687782" font-family="ui-monospace,Consolas,monospace" font-size="9" text-anchor="middle"><text x="737" y="151">NOVA</text><text x="1043" y="174">MAYA</text><text x="1067" y="363">CHAIN</text><text x="764" y="391">DSP</text><text x="698" y="279">RF</text></g>
   <g fill="#087c6b"><circle cx="892" cy="76" r="5"/><circle cx="1032" cy="154" r="5"/><circle cx="1038" cy="348" r="5"/><circle cx="800" cy="416" r="5"/><circle cx="708" cy="250" r="5"/></g>
 </g>
 <path class="flow" d="M80 466H1120" stroke="#087c6b" stroke-opacity=".55" stroke-width="2"/>

@@ -47,13 +47,13 @@ The workflow runs once per day and commits only when the generated activity asse
 Profile name:
 
 ```text
-Mihail Petkov
+Maya
 ```
 
 Bio:
 
 ```text
-Building proof-native autonomous systems, local-first AI infrastructure, and instrument-grade desktop products.
+Building Nova: local-first AI code change with deterministic evidence, durable apply and rollback.
 ```
 
 Location:
@@ -65,11 +65,9 @@ Sofia, Bulgaria
 Pinned repositories:
 
 1. `gonzo-max2` — profile and engineering identity
-2. A public MAYA architecture or documentation repository
-3. A polished Vozime mobile product repository or public case study
-4. AURELIS as the strongest real-time product system
-5. DERAMA Studio or Aether Audio Lab for native DSP depth
-6. UI_DEBUG_MCP_PRO or AETHER RF Sense for engineering research depth
+2. `maya-codex-nexus` — evidence-governed AI workbench
+3. `aegis-unified-0.9.0` — public local-AI runtime work
+4. Nova only after a deliberate decision to make a public case study
 
 Do not pin empty experiments, forks without substantial original work, or repositories without a professional README.
 

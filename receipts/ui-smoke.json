@@ -2,9 +2,9 @@
   "schema": "gonzo-profile-apex-ui-smoke/v1",
   "passed": true,
   "checks": {
-    "atlas_tabs": 9,
-    "proof_tabs": 4,
-    "atlas_switch": "Vozime",
+    "atlas_tabs": 10,
+    "proof_tabs": 5,
+    "atlas_switch": "MAYA Codex Nexus",
     "phase_switch": "Act",
     "trip_switch": "COMPLETE",
     "ledger_tamper": "MUTATION DETECTED",

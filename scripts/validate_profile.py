@@ -15,6 +15,7 @@ TOKEN_PATTERNS = [
 ]
 REQUIRED_APEX = {
     'assets/apex/hero-dark.svg', 'assets/apex/hero-light.svg',
+    'assets/apex/nova-dark.svg', 'assets/apex/nova-light.svg',
     'assets/apex/maya-dark.svg', 'assets/apex/maya-light.svg',
     'assets/apex/systems-dark.svg', 'assets/apex/systems-light.svg',
     'assets/apex/vozime-dark.svg', 'assets/apex/vozime-light.svg',
