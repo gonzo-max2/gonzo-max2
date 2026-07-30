@@ -30,8 +30,8 @@
       "bytes": 1070
     },
     "PROFILE_MANIFEST.json": {
-      "sha256": "093468b6ad26c833484992945b569ac116c7d88da0913d2a6b8b31d40d18d9e3",
-      "bytes": 11813
+      "sha256": "cd003f47cd48cf95ff22e8be143dca1c9f7eb53d64eb99c8c45eedabb5844915",
+      "bytes": 10776
     },
     "PROFILE_OS_ARCHITECTURE.md": {
       "sha256": "8f187f701d7beb176ae62ab54075631b526fa26c7dacb8bc9206c8f49e89a373",
@@ -42,8 +42,8 @@
       "bytes": 3856
     },
     "README.md": {
-      "sha256": "0f4e8073488a0ff061ec722c7241620015b75586df00738de95587f4485fd493",
-      "bytes": 8381
+      "sha256": "defb92a85d440e144830a0e2e379121778ebefd67d21769299a1d17e929f4c96",
+      "bytes": 6030
     },
     "SECURITY.md": {
       "sha256": "b476ecb296a3b155655f64a389cc88710299ceb3c62165dd345973badc61b46c",
@@ -252,30 +252,6 @@
     "docs/sw.js": {
       "sha256": "2413c168307a03400d5fa35f505367d4a3452ba21970ebb2dad4e841bad24684",
       "bytes": 648
-    },
-    "scripts/__pycache__/build_apex_assets.cpython-312.pyc": {
-      "sha256": "6c092e184fb6f64bc0bb9327f06127e3f4e5719187546a65845ed3e79f16b767",
-      "bytes": 28782
-    },
-    "scripts/__pycache__/build_profile.cpython-312.pyc": {
-      "sha256": "d6d0600c46a99c983451a62ced095d79b007feb4bc3038894c2964aae4a9e06e",
-      "bytes": 3395
-    },
-    "scripts/__pycache__/generate_activity.cpython-312.pyc": {
-      "sha256": "14a53bfbd729a33fdca52328046adcf7fbf6acde630be5ee2f4005be58906b34",
-      "bytes": 12974
-    },
-    "scripts/__pycache__/ui_smoke_test.cpython-312.pyc": {
-      "sha256": "58f44e9edddc3035cebcf556f27854b79469c673381fdc3b6a129e502429edc6",
-      "bytes": 5430
-    },
-    "scripts/__pycache__/validate_profile.cpython-312.pyc": {
-      "sha256": "1b101827549152b6b49b9cda2b0d740511adb3463065b49effcfc9d8d12af098",
-      "bytes": 4818
-    },
-    "scripts/__pycache__/verify_profile_os.cpython-312.pyc": {
-      "sha256": "177b7fc0b5e42755b5eb6bd7db4bf81842226970fed18b7af557dcf514aceeec",
-      "bytes": 8724
     },
     "scripts/build_apex_assets.py": {
       "sha256": "03a55c032df97c6a0f1b3ffe183691ef75f56aae788d9ba3e0b93380112352c8",

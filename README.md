@@ -1,169 +1,128 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/apex/nova-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/apex/nova-light.svg">
-  <img alt="Nova Proof Studio — AI can propose, evidence decides" src="./assets/apex/nova-dark.svg" width="100%">
-</picture>
+# Gonzo Max
 
-<p align="center">
-  <strong>Verified AI change · Local-first developer tools · Deterministic evidence · Durable recovery</strong>
-</p>
+I design and build local-first software systems where automation is useful
+without becoming the authority. My work sits at the intersection of agent
+runtimes, developer tooling, product interfaces, recovery, and evidence-backed
+execution.
 
-<p align="center">
-  <a href="#nova-proof-studio">Nova</a>
-  &nbsp;·&nbsp;
-  <a href="#what-can-be-demonstrated-now">Evidence</a>
-  &nbsp;·&nbsp;
-  <a href="#known-boundaries">Boundaries</a>
-  &nbsp;·&nbsp;
-  <a href="#selected-related-work">Related work</a>
-  &nbsp;·&nbsp;
-  <a href="https://gonzo-max2.github.io/gonzo-max2/">Profile OS</a>
-</p>
+The public project I am concentrating on now is
+[Aegis](https://github.com/gonzo-max2/aegis-unified-0.9.0): a guarded runtime
+that places deterministic software between a model and the operating system.
 
-<img src="./assets/continuum-divider.svg" alt="" width="100%">
+## Aegis
 
-## Operating profile
+[![Aegis CI](https://github.com/gonzo-max2/aegis-unified-0.9.0/actions/workflows/ci.yml/badge.svg)](https://github.com/gonzo-max2/aegis-unified-0.9.0/actions/workflows/ci.yml)
+[![Project site](https://img.shields.io/badge/project-site-63c7da)](https://gonzo-max2.github.io/aegis-unified-0.9.0/)
+[![License: Apache--2.0](https://img.shields.io/badge/license-Apache--2.0-69757c)](https://github.com/gonzo-max2/aegis-unified-0.9.0/blob/main/LICENSE)
 
-I’m **Maya**, product owner and systems builder behind **Nova**.
+![Aegis Studio showing a guarded engineering run](https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-live.webp)
 
-I build local-first systems where model intent, source mutation, deterministic verification, and evidence remain one inspectable chain. My current focus is the uncomfortable gap between an AI saying that a code change works and a repository proving exactly what changed, against which revision, with which checks, and under whose authority.
-
-Nova is a private technical asset. Repository access, the recorded demonstration, architecture, source package, and due-diligence evidence are available by invitation for serious licensing or acquisition review.
-
-## Nova Proof Studio
-
-**Nova is a local-first Proof Studio for turning bounded AI proposals into inspectable, reversible source changes.**
+Aegis is a local-first execution runtime for coding and workspace agents. A
+model can propose a plan and request tools; deterministic code owns permission
+checks, approvals, path confinement, process cleanup, reversible changes,
+receipts, and the final completion decision.
 
 ```text
-prompt + revisioned context
-        ↓
-three candidate strategies
-        ↓
-exact patches + deterministic checks
-        ↓
-explicit human selection
-        ↓
-durable apply / rollback
-        ↓
-local Git commit + evidence
+model proposal
+      ↓
+typed intent and exact workspace scope
+      ↓
+permission, risk, policy, and approval
+      ↓
+bounded and cancellable execution
+      ↓
+diff, process, network, and verification receipts
+      ↓
+verified completion or an explicit resumable blocker
 ```
 
-The product is deliberately stricter than a normal prompt-to-code demo. Models can propose. They cannot mark their own checks green, silently select a winner, or write directly to the working tree. The local agent retains source authority and binds candidate evidence to the repository revision it actually inspected.
+The runtime has two operator surfaces:
 
-<table>
-<tr>
-<td width="50%" valign="top">
+- `aegis` is a scrollback-first terminal interface with one transcript, one
+  composer, and one live status row.
+- `aegisui` is a React Studio for inspecting plans, tool receipts, file
+  changes, approvals, specialist work, failures, and proof.
 
-### What it is
+Both surfaces consume the same runtime events. Neither can bypass policy or
+turn model prose into completion evidence.
 
-- A browser-based candidate and evidence workspace
-- A local source-authority agent
-- Provider-neutral routing for OpenAI, Anthropic, xAI, compatible endpoints, and local Ollama
-- Three distinct candidate strategies per bounded run
-- Deterministic checks for source scope, parsing, types, lint, tests, and preservation policy
-- Explicit selection before mutation
-- Durable transactions with rollback and restart hydration
-- Local Git branch and commit evidence
+<picture>
+  <source
+    media="(max-width: 720px)"
+    srcset="https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-mobile.png"
+  >
+  <img
+    alt="Current Aegis 0.10 Studio desktop interface"
+    src="https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-desktop.png"
+    width="100%"
+  >
+</picture>
 
-</td>
-<td width="50%" valign="top">
+### What is implemented
 
-### What it is not
+- Workspace-confined file, process, Git, web, browser, and SSH tools
+- Typed policy decisions, risk classification, and approval boundaries
+- Persistent missions, checkpoints, continuation, and truthful terminal states
+- Exact tool receipts, file deltas, proof manifests, and rollback data
+- Permission-scoped specialist agents with reduced tool registries
+- Ollama, OpenAI, Anthropic, and Google provider adapters
+- Native CLI and React control surfaces over one canonical runtime
+- Verified episodic memory derived from bounded outcomes rather than assistant
+  prose
+- Reproducible Python packages, pinned browser CI, and portable-image contracts
 
-- Not a universal mouse-to-code engine
-- Not a claim of compatibility with every framework, animation, or effect
-- Not a deployed multi-tenant SaaS
-- Not a live GitHub App or hosted admission service
-- Not independently security-certified
-- Not proven by customer revenue or a production fleet
-- Not permission for a model to approve its own output
-- Not a substitute for buyer-side technical diligence
+### Current boundary
 
-</td>
-</tr>
-</table>
+Aegis is a serious pre-production alpha for one operator on a trusted
+workstation. It is not presented as a hostile multi-tenant security boundary,
+an independently audited enterprise platform, or a foundation model. Public
+claims are intentionally narrower than the architecture.
 
-## What can be demonstrated now
+The latest stable release remains
+[v0.9.2](https://github.com/gonzo-max2/aegis-unified-0.9.0/releases/tag/v0.9.2).
+Current `main` contains the 0.10 verified-memory and public-interface work while
+its release evidence is being completed.
 
-The current local vertical slice is designed to show a complete causal chain rather than a collection of disconnected mock panels:
+## Engineering focus
 
-1. The Studio prepares context from real project files and the current repository revision.
-2. A configured provider, including local Gemma through Ollama, produces three strategy-specific candidates.
-3. Each candidate receives an exact patch, provenance, elapsed time, cost when reported, and truthful check states.
-4. Nova rejects wrong-target or invalid changes instead of presenting them as successful.
-5. A human explicitly selects a candidate.
-6. The local agent revalidates the source baseline and applies through a durable transaction.
-7. The transaction can roll back and can be hydrated after restart.
-8. Local branch, commit, and evidence records preserve what was actually applied.
+I care most about the parts of software that fail when a demo becomes a real
+tool:
 
-The implementation includes a responsive Proof Gallery, mobile review surfaces, keyboard operation, reduced-motion and forced-colors handling, persistent run records, signed local evidence, and a recorded buyer demonstration. Deterministic test fixtures remain in the test boundary; they are not described as live provider results.
+- lifecycle ownership and deterministic state transitions;
+- recovery from cancellation, provider failure, partial execution, and drift;
+- strict boundaries around paths, processes, credentials, and network access;
+- interfaces that reveal real runtime state instead of decorative progress;
+- accessible, responsive product surfaces with restrained motion;
+- tests that prove behavior through the actual launcher and packaged artifact;
+- release provenance that ties a public claim to an exact commit.
 
-For private review: **[request access to the Nova repository](https://github.com/gonzo-max2/NOVA)**. The repository is intentionally private, so the link only resolves for invited accounts.
+My working rule is straightforward: a system should be able to explain what it
+changed, why it had authority to change it, what verified the result, and how to
+recover if any of those statements are false.
 
-## Known boundaries
-
-The most commercially important unfinished work is also the most expensive:
-
-- The cloud control plane, organization model, billing, and cross-tenant isolation are architecture, not a deployed service.
-- Agent pairing over an outbound authenticated channel is not production-deployed.
-- The GitHub App, draft-PR creation, remote Check Run, and exact-head merge admission are not live.
-- Runtime screenshots are not yet synchronized into a universal visual-diff pipeline.
-- Provider behavior, front-end frameworks, visual effects, and motion systems cannot be guaranteed universally.
-- Real-provider canaries, external penetration testing, independent accessibility certification, and design-partner results are still required.
-
-Those gaps are disclosed because Nova’s defensible value is the implemented local proof-and-transaction core, the product interaction model, and the architecture—not an unsupported claim that the full enterprise company already exists.
-
-## Why this direction matters
-
-Most AI coding products optimize proposal speed. Nova’s hypothesis is that high-consequence adoption depends on proving the subject and authority of a change:
-
-- Which revision did the model see?
-- Which files and ranges were allowed?
-- What exact patch was evaluated?
-- Which checks ran, and which did not?
-- Who selected and approved it?
-- Can the source be restored if the apply fails?
-- Does later Git evidence still refer to the same immutable subject?
-
-That creates a possible IP position around the integration of candidate generation, revision-bound context, deterministic eligibility, human authority, durable source transactions, and exact-subject admission. It is an implementation and product thesis, not a claim that no prior art exists.
-
-## Selected related work
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [MAYA Codex Nexus](https://github.com/gonzo-max2/maya-codex-nexus)
-
-A local-first, evidence-governed AI engineering workbench. It explores model orchestration, transactional workspaces, runtime receipts, recovery, and proof-native desktop interaction.
-
-</td>
-<td width="50%" valign="top">
+## Selected work
 
 ### [Aegis Unified](https://github.com/gonzo-max2/aegis-unified-0.9.0)
 
-Public repository for local AI runtime and interface work. Its local-model path informed Nova’s capability-aware Ollama and Gemma integration.
+The public agent-governance runtime described above. Python, SQLite,
+prompt-toolkit, Rich, FastAPI, React, TypeScript, Vite, Playwright, Ollama, and
+provider APIs.
 
-</td>
-</tr>
-</table>
+### [MAYA Codex Nexus](https://github.com/gonzo-max2/maya-codex-nexus)
 
-The broader portfolio also contains mobility, realtime interaction, native DSP, RF sensing, recovery/forensics, UI-quality automation, and cryptographic-receipt research. These are supporting explorations, not substitutes for the Nova flagship.
+A local engineering workbench exploring model orchestration, transactional
+workspaces, proof-native interaction, and desktop runtime integration.
 
-## Engineering invariants
+Other work spans native audio and DSP, realtime interaction, mobile product
+systems, recovery tooling, and UI-quality automation. I treat those as
+engineering domains rather than a collection of brand names.
 
-- Runtime truth over simulated completion
-- Typed contracts over implicit coupling
-- Receipts over unsupported claims
-- Explicit authority over invisible automation
-- Rollback before mutation
-- Graceful degradation over fake availability
-- Measured performance over decorative motion
-- Research labelled honestly
+## Evidence and maintenance
 
-## Engineering activity
-
-The activity panel is generated by this repository’s GitHub Actions workflow using GitHub’s API. It does not depend on a third-party profile-stat renderer.
+The Aegis repository contains its architecture, security boundary, changelog,
+tests, current interface captures, release workflows, and validation evidence.
+The profile activity panel below is generated by a repository-owned GitHub
+Actions workflow using GitHub's API; it is not a third-party stat image.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
@@ -171,10 +130,9 @@ The activity panel is generated by this repository’s GitHub Actions workflow u
   <img alt="Verified GitHub engineering activity" src="./assets/activity-dark.svg" width="100%">
 </picture>
 
-## Serious inquiries
+## Contact
 
-For private technical diligence, licensing, or acquisition discussion, open a short non-confidential issue in this profile repository or use the repository-access channel already shared. Sensitive material should not be posted publicly.
-
-<p align="center">
-  <strong>AI can propose. Evidence decides.</strong>
-</p>
+For technical collaboration, product diligence, or licensing discussions, open
+a short non-confidential issue in this profile repository. Do not post
+credentials, private source, customer data, or other sensitive material in a
+public issue.
