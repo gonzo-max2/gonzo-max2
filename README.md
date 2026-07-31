@@ -35,7 +35,7 @@ The project ships two operator surfaces: `aegis`, a scrollback-first terminal in
   <img alt="Aegis Studio desktop interface" src="https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-desktop.png" width="100%">
 </picture>
 
-Aegis is a serious pre-production alpha for one operator on a trusted workstation. Current `main` contains the 0.10.4 semantic-runtime work. The latest tagged stable release remains [v0.9.2](https://github.com/gonzo-max2/aegis-unified-0.9.0/releases/tag/v0.9.2) while newer release evidence is completed.
+Aegis is a serious pre-production alpha for one operator on a trusted workstation. Current package metadata reports version 0.10.4; release and validation claims remain bound to their exact source revision and evidence.
 
 ## Public repositories
 
