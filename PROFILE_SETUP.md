@@ -1,122 +1,85 @@
-# GONZO // SYSTEMS Profile Setup
+# Public Profile Maintenance
 
-## Security first
+This repository is the public front door for the `gonzo-max2` account. Treat every file, commit, issue, pull request, workflow log, artifact, and GitHub Pages asset as publishable and permanently indexable.
 
-The GitHub token previously pasted into chat must be revoked. Never store a personal access token in this repository, its README, workflow files, or commit history.
+## Public identity
 
-Use the repository-scoped `GITHUB_TOKEN` supplied automatically by GitHub Actions. The included metrics workflow needs no personal token.
-
-## Install
-
-The profile repository must be named exactly:
+Use one identity consistently across the GitHub profile and product repositories:
 
 ```text
-gonzo-max2
+Name: Gonzo Max
+Bio: Building local-first agent runtimes with explicit authority, recovery, and evidence-backed completion.
+Location: optional; publish only when deliberately useful
 ```
 
-under the account:
+The public profile should point to three repositories:
 
-```text
-gonzo-max2
-```
+1. `gonzo-max2/gonzo-max2` — profile, public-surface policy, and portfolio site;
+2. `gonzo-max2/aegis-unified-0.9.0` — the open Aegis runtime;
+3. `gonzo-max2/maya-codex-nexus` — a sanitized MAYA product case study.
 
-For the README to appear on the public GitHub profile, the profile repository must be public and contain `README.md` at its root.
+Do not expose private repository names, internal paths, customer data, provider configuration, credentials, unpublished screenshots, or unsupported maturity claims merely to make the profile look busier. GitHub already contains enough decorative archaeology.
 
-Copy the contents of this package into `gonzo-max2/gonzo-max2`, then commit and push:
+## Authentication
+
+Use GitHub CLI's credential store rather than pasting tokens into files, chat, shell arguments, Git URLs, or `.env` files:
 
 ```bash
-git add README.md assets scripts .github PROFILE_SETUP.md
-git commit -m "feat(profile): install GONZO systems profile"
-git push origin main
+gh auth login --web --git-protocol https
+gh auth status
 ```
 
-## Enable activity refresh
+If a credential is exposed, revoke it immediately, review account and Actions activity, rotate dependent credentials, and assess whether history cleanup is required. Removing a token from the latest commit does not remove it from Git history or external caches.
 
-In the repository:
+## Local validation
 
-1. Open **Settings → Actions → General**.
-2. Under **Workflow permissions**, select **Read and write permissions**.
-3. Save.
-4. Open **Actions → Profile Metrics → Run workflow**.
-5. Confirm that `assets/activity-dark.svg` and `assets/activity-light.svg` are updated by the workflow.
-
-The workflow runs once per day and commits only when the generated activity assets change.
-
-## Recommended profile configuration
-
-Profile name:
-
-```text
-Maya
-```
-
-Bio:
-
-```text
-Building Nova: local-first AI code change with deterministic evidence, durable apply and rollback.
-```
-
-Location:
-
-```text
-Sofia, Bulgaria
-```
-
-Pinned repositories:
-
-1. `gonzo-max2` — profile and engineering identity
-2. `maya-codex-nexus` — evidence-governed AI workbench
-3. `aegis-unified-0.9.0` — public local-AI runtime work
-4. Nova only after a deliberate decision to make a public case study
-
-Do not pin empty experiments, forks without substantial original work, or repositories without a professional README.
-
-## Visual policy
-
-- Keep the hero and architecture assets self-contained.
-- Do not add a wall of third-party badges.
-- Do not use fake contribution graphs.
-- Do not embed visitor counters.
-- Do not add animated typing banners.
-- Do not expose private repository names that should remain confidential.
-- Keep the profile focused on systems, evidence, architecture, and shipped capability.
-
-## Fully automated secure deployment
-
-The package includes an installer that performs the complete deployment without storing a personal access token:
+From the repository root:
 
 ```bash
-chmod 700 scripts/deploy_profile_secure.sh
-./scripts/deploy_profile_secure.sh
+python3 scripts/validate_profile.py
+python3 scripts/verify_profile_os.py
+node --check docs/app.js
 ```
 
-The installer:
-
-1. Validates all local README and SVG assets.
-2. Prompts for a newly generated token with terminal echo disabled.
-3. Verifies the authenticated account is `gonzo-max2`.
-4. Updates the profile name, bio, and location.
-5. Creates `gonzo-max2/gonzo-max2` when missing.
-6. Makes the profile repository public.
-7. Configures repository metadata, topics, and feature policy.
-8. Sets workflow token permissions to `write`.
-9. Synchronizes the complete profile package.
-10. Commits and pushes to `main`.
-11. Triggers the verified activity workflow.
-12. Returns repository, README, and profile locations.
-
-The token remains only in the deployment process environment and is unset on exit.
-
-Remote verification:
+Review the exact public diff before pushing:
 
 ```bash
-chmod 700 scripts/verify_profile_remote.sh
-./scripts/verify_profile_remote.sh
+git status --short
+git diff --check
+git diff --stat
+git diff
 ```
 
-Do not pass tokens as command-line arguments, embed them in Git URLs, place them in shell history, or save them in `.env` files.
+## GitHub Actions policy
 
+Keep the repository-wide default workflow permission read-only. Grant write access only inside the workflow and job that needs it.
 
-## Profile OS and GitHub Pages
+The activity workflow needs scoped `contents: write` because it commits generated SVG assets. Validation and Pages build jobs should remain read-only except for the dedicated Pages deployment permissions.
 
-Set **Settings → Pages → Source** to **GitHub Actions**, run **Deploy Profile OS**, and open `https://gonzo-max2.github.io/gonzo-max2/`. The Pages layer includes bounded Canvas motion, scroll reveal, pointer tilt, animated proof continuum, an interactive SHA-256 blockchain proof chain, dark/light themes, reduced-motion support, and offline caching.
+Third-party Actions should be pinned to reviewed commit SHAs, not only mutable major-version tags. Workflow credentials should not persist in the checkout unless a job explicitly needs to push.
+
+## Publishing workflow
+
+Use a branch and pull request for profile changes:
+
+```bash
+git switch -c profile/<change-name>
+git add --all
+git commit -m "docs(profile): <clear change>"
+git push -u origin HEAD
+gh pr create --draft --fill
+```
+
+Before merge, verify:
+
+- the profile README renders correctly in dark and light themes;
+- GitHub Pages works at desktop and narrow widths;
+- reduced-motion and keyboard navigation remain usable;
+- every project claim links to current public evidence;
+- no private product name or operational detail slipped into generated data;
+- generated assets and receipts match the source revision;
+- validation and deployment workflows pass.
+
+## Canonical public surfaces
+
+`README.md` and `docs/index.html` are the current human-facing surfaces. Generated profile data, manifests, and legacy visual assets must stay aligned with those surfaces or be retired. A stale generator quietly restoring old identities and private project names is not automation; it is a time-delayed disclosure mechanism.
