@@ -39,7 +39,7 @@ Aegis is a local-first execution runtime that places deterministic software betw
 - `aegis` provides a scrollback-first terminal operator surface.
 - `aegisui` provides a React Studio for plans, changes, approvals, specialist work, failures, and proof.
 - Both consume the same canonical runtime events and authority model.
-- Current source package: `aegis-terminal` 0.10.1.
+- Current source package: `aegis-terminal` 0.10.4.
 
 **Boundary:** serious pre-production alpha for one operator on a trusted workstation. It is not presented as an independently audited hostile multi-tenant security boundary.
 
