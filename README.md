@@ -1,15 +1,32 @@
-# Gonzo Max
+# Sasho Abdulrahim Derama
 
-I design and build local-first software systems where automation is useful
-without becoming the authority. My work sits at the intersection of agent
-runtimes, developer tooling, product interfaces, recovery, and evidence-backed
-execution.
+**Senior AI Product & Systems Engineer**
 
-The public project I am concentrating on now is
-[Aegis](https://github.com/gonzo-max2/aegis-unified-0.9.0): a guarded runtime
-that places deterministic software between a model and the operating system.
+I design and build software where probabilistic models remain useful without becoming the final authority. My work centers on governed agent execution, proof-carrying software change, local-first developer platforms, native systems, recovery, and evidence-backed product interfaces.
 
-## Aegis
+[Professional dossier](https://gonzo-max2.github.io/gonzo-max2/profile.html) · [PDF CV](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/Sasho-Abdulrahim-Derama-CV.pdf) · [ATS CV](https://github.com/gonzo-max2/maya-codex-nexus/blob/main/CV.md) · [Product evidence ledger](https://gonzo-max2.github.io/gonzo-max2/)
+
+## Position
+
+My strongest engineering work lives at the boundary between model intent and real effects:
+
+```text
+objective and context
+        ↓
+explicit scope and authority
+        ↓
+bounded execution or source transaction
+        ↓
+checks, receipts, and resulting artifacts
+        ↓
+verified completion, refusal, or recoverable blocker
+```
+
+The recurring design rule is simple: a system should be able to explain **what changed, why it had authority, what verified the result, and how to recover when any statement is false**.
+
+## Product systems
+
+### [Aegis](https://github.com/gonzo-max2/aegis-unified-0.9.0)
 
 [![Aegis CI](https://github.com/gonzo-max2/aegis-unified-0.9.0/actions/workflows/ci.yml/badge.svg)](https://github.com/gonzo-max2/aegis-unified-0.9.0/actions/workflows/ci.yml)
 [![Project site](https://img.shields.io/badge/project-site-63c7da)](https://gonzo-max2.github.io/aegis-unified-0.9.0/)
@@ -17,122 +34,73 @@ that places deterministic software between a model and the operating system.
 
 ![Aegis Studio showing a guarded engineering run](https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-live.webp)
 
-Aegis is a local-first execution runtime for coding and workspace agents. A
-model can propose a plan and request tools; deterministic code owns permission
-checks, approvals, path confinement, process cleanup, reversible changes,
-receipts, and the final completion decision.
+Aegis is a local-first execution runtime that places deterministic software between an AI model and the operating system. Models propose plans and tool calls; the runtime owns permission checks, risk classification, approvals, path confinement, process cleanup, reversible changes, exact receipts, recovery, and terminal completion.
 
-```text
-model proposal
-      ↓
-typed intent and exact workspace scope
-      ↓
-permission, risk, policy, and approval
-      ↓
-bounded and cancellable execution
-      ↓
-diff, process, network, and verification receipts
-      ↓
-verified completion or an explicit resumable blocker
-```
+- `aegis` provides a scrollback-first terminal operator surface.
+- `aegisui` provides a React Studio for plans, changes, approvals, specialist work, failures, and proof.
+- Both consume the same canonical runtime events and authority model.
+- Current source package: `aegis-terminal` 0.10.1.
 
-The runtime has two operator surfaces:
+**Boundary:** serious pre-production alpha for one operator on a trusted workstation. It is not presented as an independently audited hostile multi-tenant security boundary.
 
-- `aegis` is a scrollback-first terminal interface with one transcript, one
-  composer, and one live status row.
-- `aegisui` is a React Studio for inspecting plans, tool receipts, file
-  changes, approvals, specialist work, failures, and proof.
+### [MAYA Codex Nexus](https://github.com/gonzo-max2/maya-codex-nexus)
 
-Both surfaces consume the same runtime events. Neither can bypass policy or
-turn model prose into completion evidence.
+MAYA is the operator-facing product layer: mission framing, explicit state, scoped decisions, review, evidence, and recovery. Its public repository is a sanitized case study rather than the private application source.
 
-<picture>
-  <source
-    media="(max-width: 720px)"
-    srcset="https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-mobile.png"
-  >
-  <img
-    alt="Current Aegis 0.10 Studio desktop interface"
-    src="https://raw.githubusercontent.com/gonzo-max2/aegis-unified-0.9.0/main/docs/evidence/aegis-studio-desktop.png"
-    width="100%"
-  >
-</picture>
+The public evidence includes actual Mission and Decisions workspace captures, a product brief, controlled source-review options, and the professional CV generated from a deterministic Markdown-to-PDF pipeline.
 
-### What is implemented
+### NOVA
 
-- Workspace-confined file, process, Git, web, browser, and SSH tools
-- Typed policy decisions, risk classification, and approval boundaries
-- Persistent missions, checkpoints, continuation, and truthful terminal states
-- Exact tool receipts, file deltas, proof manifests, and rollback data
-- Permission-scoped specialist agents with reduced tool registries
-- Ollama, OpenAI, Anthropic, and Google provider adapters
-- Native CLI and React control surfaces over one canonical runtime
-- Verified episodic memory derived from bounded outcomes rather than assistant
-  prose
-- Reproducible Python packages, pinned browser CI, and portable-image contracts
+NOVA is the verified-change layer under private evaluation: source identity, bounded patches, durable transactions, independent verification, signed change records, candidate evidence, and reference exact Git admission.
 
-### Current boundary
+Recorded deterministic baseline evidence includes 317,629 generated assertions, 95 browser-harness assertions, 99 local-agent checks, 97 hostile control-plane checks, and 1,000 compatibility operations. Those figures are repository-authored evidence tied to stated baselines and fixtures, not independent certification or customer-scale proof.
 
-Aegis is a serious pre-production alpha for one operator on a trusted
-workstation. It is not presented as a hostile multi-tenant security boundary,
-an independently audited enterprise platform, or a foundation model. Public
-claims are intentionally narrower than the architecture.
+## Architecture across the product family
 
-The latest stable release remains
-[v0.9.2](https://github.com/gonzo-max2/aegis-unified-0.9.0/releases/tag/v0.9.2).
-Current `main` contains the 0.10 verified-memory and public-interface work while
-its release evidence is being completed.
+| Responsibility | System | Primary authority |
+|---|---|---|
+| Mission framing, decisions, review, and recovery UX | **MAYA** | Operator experience |
+| Source proposals, transactions, evidence, and exact Git admission | **NOVA** | Verified software change |
+| Tools, policy, processes, receipts, checkpoints, and completion | **Aegis** | Governed runtime execution |
+
+The separation matters. A polished interface cannot prove a source transaction occurred, and a successful process exit cannot prove the requested objective was completed. Each layer owns a different kind of truth.
+
+## Additional engineering domains
+
+- **DERAMA Studio** - C++23/JUCE DAW and audio plug-in platform for real-time DSP, plug-in hosting, high-performance rendering, and instrument-grade interaction.
+- **TripCab / Vozime** - React Native and Expo mobility product for authoritative trip state, rider/driver workflows, offline recovery, safety, and accessibility.
+- **Forensic recovery and QA** - evidence-oriented recovery workflows, repository auditing, UI diagnostics, accessibility checks, and deterministic validation harnesses.
+
+## Technical depth
+
+- **Languages:** Python, TypeScript, JavaScript, C++23, SQL, Bash; Rust working knowledge
+- **AI and agents:** tool calling, JSON Schema, model routing, Ollama, hosted-provider adapters, local inference, approval gates, provenance, evidence
+- **Product:** React, React Native, Expo, Vite, accessible interaction, responsive systems, WebSocket/SSE state, Playwright
+- **Backend and data:** FastAPI, Pydantic, Node.js, REST, SQLite, durable state, event streams, transactions
+- **Native and real-time:** JUCE, CMake, Ninja, Tauri, audio/DSP architecture, GPU-oriented UI systems
+- **Platform and release:** Linux, Docker, Git, GitHub Actions, SSH, process isolation, SBOMs, pinned CI actions, release verification
+- **Quality:** pytest, Vitest, TypeScript, Ruff, ESLint, fuzzing, concurrency and chaos testing, accessibility and visual harnesses
 
 ## Engineering focus
 
-I care most about the parts of software that fail when a demo becomes a real
-tool:
+I care most about the parts of software that fail when a demo becomes a real tool:
 
 - lifecycle ownership and deterministic state transitions;
 - recovery from cancellation, provider failure, partial execution, and drift;
 - strict boundaries around paths, processes, credentials, and network access;
-- interfaces that reveal real runtime state instead of decorative progress;
-- accessible, responsive product surfaces with restrained motion;
-- tests that prove behavior through the actual launcher and packaged artifact;
-- release provenance that ties a public claim to an exact commit.
+- interfaces that expose actual runtime state instead of decorative progress;
+- tests that exercise real launchers, packages, and recovery paths;
+- release provenance tied to exact commits and artifacts;
+- explicit separation between demonstrated, private, experimental, and independently verified capability.
 
-My working rule is straightforward: a system should be able to explain what it
-changed, why it had authority to change it, what verified the result, and how to
-recover if any of those statements are false.
+## Earlier professional experience
 
-## Selected work
+Earlier Google account-recovery and eBay catalog roles shaped my approach to identity evidence, privacy, policy, escalation, taxonomy, duplicate resolution, and data-quality controls. Those responsibilities now appear in software as explicit authority boundaries and inspectable operational state.
 
-### [Aegis Unified](https://github.com/gonzo-max2/aegis-unified-0.9.0)
+## Public evidence boundary
 
-The public agent-governance runtime described above. Python, SQLite,
-prompt-toolkit, Rich, FastAPI, React, TypeScript, Vite, Playwright, Ollama, and
-provider APIs.
-
-### [MAYA Codex Nexus](https://github.com/gonzo-max2/maya-codex-nexus)
-
-A local engineering workbench exploring model orchestration, transactional
-workspaces, proof-native interaction, and desktop runtime integration.
-
-Other work spans native audio and DSP, realtime interaction, mobile product
-systems, recovery tooling, and UI-quality automation. I treat those as
-engineering domains rather than a collection of brand names.
-
-## Evidence and maintenance
-
-The Aegis repository contains its architecture, security boundary, changelog,
-tests, current interface captures, release workflows, and validation evidence.
-The profile activity panel below is generated by a repository-owned GitHub
-Actions workflow using GitHub's API; it is not a third-party stat image.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img alt="Verified GitHub engineering activity" src="./assets/activity-dark.svg" width="100%">
-</picture>
+The repositories contain implementation, architecture, validation artifacts, real sanitized interface captures, release chronology, and explicit non-claims. Recorded checks are self-authored engineering evidence tied to specific commits, fixtures, and environments. They are not represented as customer adoption, independent security certification, production-scale benchmarking, or universal correctness.
 
 ## Contact
 
-For technical collaboration, product diligence, or licensing discussions, open
-a short non-confidential issue in this profile repository. Do not post
-credentials, private source, customer data, or other sensitive material in a
-public issue.
+For technical collaboration, product diligence, or licensing discussions, open a short non-confidential issue in this profile repository. Do not post credentials, private source, customer data, or other sensitive material in a public issue.
