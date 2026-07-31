@@ -9,16 +9,13 @@ readonly REPOSITORY="${PROFILE_REPOSITORY:-gonzo-max2}"
 readonly REPO_FULL="${OWNER}/${REPOSITORY}"
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 readonly SOURCE_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd -P)"
-readonly PROFILE_NAME="${PROFILE_NAME:-Maya}"
-readonly PROFILE_BIO="${PROFILE_BIO:-Building Nova: local-first AI code change with deterministic evidence, durable apply and rollback.}"
-readonly PROFILE_LOCATION="${PROFILE_LOCATION:-Sofia, Bulgaria}"
+readonly TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
+readonly BRANCH="${PROFILE_DEPLOY_BRANCH:-profile/deploy-${TIMESTAMP}}"
 
 TEMP_DIR=""
-TOKEN_WAS_PROVIDED=0
 
 cleanup() {
   local exit_code=$?
-  unset GH_TOKEN GITHUB_TOKEN
   if [[ -n "${TEMP_DIR}" && -d "${TEMP_DIR}" ]]; then
     rm -rf -- "${TEMP_DIR}"
   fi
@@ -39,109 +36,47 @@ require_command() {
   command -v "$1" >/dev/null 2>&1 || fail "Required command not found: $1"
 }
 
-require_command gh
-require_command git
-require_command python3
-require_command mktemp
-require_command rsync
+for command_name in gh git python3 mktemp rsync node; do
+  require_command "${command_name}"
+done
 
-if [[ ! -f "${SOURCE_DIR}/README.md" ]]; then
-  fail "README.md not found in package root: ${SOURCE_DIR}"
+[[ -f "${SOURCE_DIR}/README.md" ]] || fail "README.md not found in ${SOURCE_DIR}"
+[[ -f "${SOURCE_DIR}/PUBLIC_SURFACE.md" ]] || fail "PUBLIC_SURFACE.md not found in ${SOURCE_DIR}"
+
+if [[ -n "${GH_TOKEN:-}" || -n "${GITHUB_TOKEN:-}" ]]; then
+  fail "Unset GH_TOKEN and GITHUB_TOKEN. This script uses the reviewed GitHub CLI credential store and never accepts pasted tokens."
 fi
 
-note "Validating local profile package"
-python3 "${SOURCE_DIR}/scripts/validate_profile.py"
-
-if [[ -z "${GH_TOKEN:-}" ]]; then
-  printf '\nPaste a NEW fine-grained GitHub token (input is hidden): ' >&2
-  IFS= read -r -s GH_TOKEN
-  printf '\n' >&2
-  TOKEN_WAS_PROVIDED=1
-fi
-
-[[ -n "${GH_TOKEN:-}" ]] || fail "No GitHub token supplied"
-export GH_TOKEN
-unset GITHUB_TOKEN
-
-note "Validating GitHub identity"
+note "Verifying GitHub CLI authentication"
+gh auth status --hostname github.com >/dev/null
 authenticated_login="$(gh api user --jq '.login')"
 [[ "${authenticated_login}" == "${OWNER}" ]] || \
-  fail "Token belongs to '${authenticated_login}', expected '${OWNER}'"
+  fail "Authenticated as '${authenticated_login}', expected '${OWNER}'"
 
-note "Updating public profile metadata"
-gh api \
-  --method PATCH \
-  /user \
-  -f "name=${PROFILE_NAME}" \
-  -f "bio=${PROFILE_BIO}" \
-  -f "location=${PROFILE_LOCATION}" \
-  >/dev/null
-
-note "Ensuring profile repository exists"
-if ! gh repo view "${REPO_FULL}" >/dev/null 2>&1; then
-  gh api \
-    --method POST \
-    /user/repos \
-    -f "name=${REPOSITORY}" \
-    -f "description=Maya — Nova Proof Studio and verified local-first AI change systems." \
-    -F private=false \
-    -F has_issues=true \
-    -F has_projects=false \
-    -F has_wiki=false \
-    -F auto_init=false \
-    >/dev/null
-fi
+note "Verifying the existing public profile repository"
+gh repo view "${REPO_FULL}" >/dev/null 2>&1 || \
+  fail "Repository ${REPO_FULL} does not exist or is not accessible"
 
 visibility="$(gh api "/repos/${REPO_FULL}" --jq '.visibility')"
-if [[ "${visibility}" != "public" ]]; then
-  note "Making ${REPO_FULL} public so GitHub can render the profile README"
-  gh api \
-    --method PATCH \
-    "/repos/${REPO_FULL}" \
-    -f visibility=public \
-    >/dev/null
-fi
+[[ "${visibility}" == "public" ]] || \
+  fail "Repository ${REPO_FULL} is '${visibility}'. This script will not change repository visibility."
 
-note "Configuring repository presentation and features"
-gh api \
-  --method PATCH \
-  "/repos/${REPO_FULL}" \
-  -f "description=Maya — Nova Proof Studio and verified local-first AI change systems." \
-  -F has_issues=true \
-  -F has_projects=false \
-  -F has_wiki=false \
-  -F delete_branch_on_merge=true \
-  >/dev/null
+default_branch="$(gh api "/repos/${REPO_FULL}" --jq '.default_branch')"
+[[ "${default_branch}" == "main" ]] || \
+  fail "Expected default branch 'main', found '${default_branch}'. This script will not rewrite repository settings."
 
-gh api \
-  --method PUT \
-  "/repos/${REPO_FULL}/topics" \
-  -f 'names[]=systems-engineering' \
-  -f 'names[]=ai-code-review' \
-  -f 'names[]=autonomous-ai' \
-  -f 'names[]=local-first' \
-  -f 'names[]=rust' \
-  -f 'names[]=tauri' \
-  -f 'names[]=typescript' \
-  -f 'names[]=python' \
-  -f 'names[]=fastapi' \
-  >/dev/null
+note "Running local validation"
+python3 "${SOURCE_DIR}/scripts/validate_profile.py"
+python3 "${SOURCE_DIR}/scripts/verify_profile_os.py"
+node --check "${SOURCE_DIR}/docs/app.js"
 
-note "Granting GitHub Actions the minimum write permission required for generated activity assets"
-gh api \
-  --method PUT \
-  "/repos/${REPO_FULL}/actions/permissions/workflow" \
-  -f default_workflow_permissions=write \
-  -F can_approve_pull_request_reviews=false \
-  >/dev/null
-
-note "Preparing clean repository checkout"
+note "Preparing an isolated checkout"
 TEMP_DIR="$(mktemp -d -t gonzo-profile-deploy.XXXXXXXX)"
 repo_dir="${TEMP_DIR}/repo"
+gh repo clone "${REPO_FULL}" "${repo_dir}" -- --quiet
 
-if ! gh repo clone "${REPO_FULL}" "${repo_dir}" -- --quiet; then
-  fail "Unable to clone ${REPO_FULL}"
-fi
+cd "${repo_dir}"
+git switch --create "${BRANCH}" "origin/main"
 
 rsync -a --delete \
   --exclude '.git/' \
@@ -151,49 +86,33 @@ rsync -a --delete \
   --exclude '*.pyc' \
   "${SOURCE_DIR}/" "${repo_dir}/"
 
-cd "${repo_dir}"
+note "Validating the exact proposed checkout"
 python3 scripts/validate_profile.py
+python3 scripts/verify_profile_os.py
+node --check docs/app.js
+git diff --check
 
-git config user.name "${PROFILE_GIT_NAME:-Maya}"
-git config user.email "${PROFILE_GIT_EMAIL:-gonzo-max2@users.noreply.github.com}"
-
-current_branch="$(git branch --show-current || true)"
-if [[ "${current_branch}" != "main" ]]; then
-  git checkout -B main
-fi
-
+git config user.name "${PROFILE_GIT_NAME:-${authenticated_login}}"
+git config user.email "${PROFILE_GIT_EMAIL:-${authenticated_login}@users.noreply.github.com}"
 git add --all
 
 if git diff --cached --quiet; then
-  note "Repository already contains the requested profile"
-else
-  note "Committing professional profile"
-  git commit -m "feat(profile): install GONZO systems profile"
-  git push --set-upstream origin main
+  note "No public profile changes to propose"
+  exit 0
 fi
 
-note "Setting main as the default branch"
-gh api \
-  --method PATCH \
-  "/repos/${REPO_FULL}" \
-  -f default_branch=main \
-  >/dev/null
+note "Creating a review branch"
+git commit -m "docs(profile): propose reviewed public profile update"
+git push --set-upstream origin "${BRANCH}"
 
-note "Triggering verified activity generation"
-if gh workflow run profile-metrics.yml --repo "${REPO_FULL}" --ref main; then
-  printf 'Workflow dispatched successfully.\n'
-else
-  printf 'WARNING: The profile was deployed, but the metrics workflow could not be dispatched yet.\n' >&2
-  printf 'Open the repository Actions tab and run "Profile Metrics" manually.\n' >&2
-fi
+note "Opening a draft pull request"
+pr_url="$(gh pr create \
+  --repo "${REPO_FULL}" \
+  --base main \
+  --head "${BRANCH}" \
+  --draft \
+  --title "Review public profile update ${TIMESTAMP}" \
+  --body $'Automated draft created by scripts/deploy_profile_secure.sh.\n\nReview the complete public diff, generated assets, identity, claims, links, and workflow results before merge. This script does not change profile metadata, repository visibility, repository settings, workflow permissions, or the default branch.')"
 
-note "Remote verification"
-remote_readme_url="$(gh api "/repos/${REPO_FULL}/contents/README.md" --jq '.html_url')"
-repo_url="$(gh api "/repos/${REPO_FULL}" --jq '.html_url')"
-profile_url="https://github.com/${OWNER}"
-
-printf '\nDeployment completed.\n'
-printf 'Repository: %s\n' "${repo_url}"
-printf 'README:    %s\n' "${remote_readme_url}"
-printf 'Profile:   %s\n' "${profile_url}"
-printf '\nSecurity reminder: revoke the token after deployment if it was created only for this operation.\n'
+printf '\nDraft pull request created: %s\n' "${pr_url}"
+printf 'No profile metadata, visibility, Actions permissions, or default-branch settings were changed.\n'
