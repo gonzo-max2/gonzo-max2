@@ -1,6 +1,15 @@
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
+const primaryNav = $('.topbar nav');
+if (primaryNav && !primaryNav.querySelector('[data-profile-link]')) {
+  const profileLink = document.createElement('a');
+  profileLink.href = './profile.html';
+  profileLink.textContent = 'Profile';
+  profileLink.dataset.profileLink = 'true';
+  primaryNav.prepend(profileLink);
+}
+
 const themeToggle = $('#theme-toggle');
 const savedTheme = localStorage.getItem('derama-theme');
 if (savedTheme === 'light') document.documentElement.dataset.theme = 'light';
@@ -66,8 +75,9 @@ const initialRecords = [
   { id: 'EV-02', product: 'MAYA', claim: 'Scoped decision boundary', source: 'maya-codex-nexus/main' },
   { id: 'EV-03', product: 'AEGIS', claim: 'Guarded mission runtime', source: 'aegis-unified/main' },
   { id: 'EV-04', product: 'AEGIS', claim: 'Responsive event projection', source: 'aegis-unified/main' },
-  { id: 'EV-05', product: 'PROFILE', claim: 'Public maturity disclosure', source: 'gonzo-max2/main' },
-  { id: 'EV-06', product: 'LEDGER', claim: 'Browser-local SHA-256 validation', source: 'docs/app.js' },
+  { id: 'EV-05', product: 'CV', claim: 'Deterministic two-page professional dossier', source: 'maya-codex-nexus/CV.md' },
+  { id: 'EV-06', product: 'PROFILE', claim: 'Public maturity disclosure', source: 'gonzo-max2/main' },
+  { id: 'EV-07', product: 'LEDGER', claim: 'Browser-local SHA-256 validation', source: 'docs/app.js' },
 ];
 let records = structuredClone(initialRecords);
 let chain = [];
